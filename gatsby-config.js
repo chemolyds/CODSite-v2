@@ -2,18 +2,13 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter MDX Basic',
-    description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@chrisbiscardi',
+    title: 'CODSite',
+		description: `your source of all things chemistry`,
+		author: `Jerdan1908 and friends`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
-      },
-    },
+		
+		/* no idea what this does */
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -22,6 +17,58 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+		/* name folders for quick querying */
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/courses/Bronze`,
+				name: `Bronze`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/courses/Silver`,
+				name: `Silver`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/courses/Gold`,
+				name: `Gold`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/guides`,
+				name: `guides`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/FAQ`,
+				name: `FAQ`,
+			},
+		},
+		/* MDX setup */
+		{
+			resolve: "gatsby-plugin-page-creator",
+			options: {
+				path: `${__dirname}/content`,
+			}
+		},
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: { 
+					default: path.resolve('./src/components/layout.js') 
+				},
+      },
+    },
+		/* something something idk */
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
