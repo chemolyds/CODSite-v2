@@ -2,6 +2,15 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+const navlink = {
+	display: 'inline',
+	color: 'white',
+	textAlign: 'center',
+	padding: '14px 16px',
+	textDecoration: 'none',
+	float: 'right'
+}
+
 const Header = ({ siteTitle }) => (
   <div
     style={{
@@ -16,7 +25,7 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{display: 'inline', margin: 0, marginRight: 10 }}>
         <Link
           to="/"
           style={{
@@ -27,6 +36,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+			<ul style={{display: 'inline', listStyleType: 'none', margin: 0, padding: 0}}>
+				<li style={{display: 'inline'}}><Link to="/about" style={navlink}>About</Link></li>
+			</ul>
     </div>
   </div>
 )
