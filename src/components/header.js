@@ -41,6 +41,7 @@ const Header = ({ siteTitle }) => (
 				<li style={{display: 'inline'}}><Link to="/about" style={navlink}>About</Link></li>
 				<li style={{display: 'inline'}}><Link to="/FAQ" style={navlink}>FAQ</Link></li>
 				<li style={{display: 'inline'}}><Link to="/guides" style={navlink}>Guides</Link></li>
+				<li style={{display: 'inline'}}><Link to="/courses" style={navlink}>Courses</Link></li>
 			</ul>
     </div>
   </div>
