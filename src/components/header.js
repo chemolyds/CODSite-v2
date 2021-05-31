@@ -37,7 +37,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
 			<ul style={{display: 'inline', listStyleType: 'none', margin: 0, padding: 0}}>
+				{/* It goes right to left */}
 				<li style={{display: 'inline'}}><Link to="/about" style={navlink}>About</Link></li>
+				<li style={{display: 'inline'}}><Link to="/FAQ" style={navlink}>FAQ</Link></li>
 			</ul>
     </div>
   </div>
