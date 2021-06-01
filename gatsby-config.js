@@ -10,6 +10,7 @@ module.exports = {
 		
 		/* no idea what this does */
     'gatsby-plugin-react-helmet',
+		/* Load images first */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,8 +64,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: { 
-					default: path.resolve('./src/components/layout.js') 
+        defaultLayouts: {
+					FAQ: path.resolve('./src/layouts/FAQ.js'),
+					default: path.resolve('./src/layouts/layout.js')
 				},
       },
     },
