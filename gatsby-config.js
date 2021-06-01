@@ -68,6 +68,8 @@ module.exports = {
 				},
       },
     },
+		/* Styling */
+		'gatsby-plugin-postcss',
 		/* something something idk */
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
