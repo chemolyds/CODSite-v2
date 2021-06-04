@@ -5,11 +5,10 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
-
 
 
 const Header = function({ siteTitle }) {
@@ -56,7 +55,7 @@ const Header = function({ siteTitle }) {
       {({ open }) => (
         <>
           <div>
-            <Menu.Button className="inline-flex justify-center w-full rounded-md px-4 py-2  text-sm font-medium text-white focus:outline-none hover:text-gray-300">
+            <Menu.Button className="inline-flex justify-center w-full rounded-md px-4 py-2 m-0 text-white focus:outline-none hover:text-gray-300">
               Courses
               <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
             </Menu.Button>
@@ -74,7 +73,7 @@ const Header = function({ siteTitle }) {
           >
             <Menu.Items
               static
-              className="origin-top-right absolute right-0 mt-2 w-28 rounded-md shadow-xl bg-gray-700 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+              className="origin-top-right absolute right-0 mt-2 w-28 rounded shadow-xl bg-gray-700 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
             >
               <div className="py-1">
                 <Menu.Item>
