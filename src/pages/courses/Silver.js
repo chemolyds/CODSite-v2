@@ -9,9 +9,13 @@ export default function Silver({ data }) {
 			<Link to='/courses'>Back to Courses</Link>
 			<ul>
 			{
-				data.allFile.nodes.filter(node => node.childMdx).map(node => {
+				data.allFile.nodes.filter(node => node.childMdx).filter(node => node.childMdx.excerpt).map(node => {
+					var slug = node.childMdx.slug
+					var title = node.childMdx.frontmatter.title
 					return (
-						<li><Link to={node.childMdx.slug}>{node.childMdx.slug}</Link></li>
+						<li><Link to={slug}>
+							{title ? title : slug}
+						</Link></li>
 					)
 				})
 			}
@@ -28,6 +32,10 @@ query {
 			childMdx {
 				slug
 				excerpt
+				frontmatter {
+					title
+					description
+				}
 			}
 		}
 	}
