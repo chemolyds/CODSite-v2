@@ -4,7 +4,8 @@ import React, {useState} from 'react'
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
-
+import { StaticImage } from 'gatsby-plugin-image'
+//import Logo from '../images/cods_logo_white.png'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -22,10 +23,8 @@ const Header = function({ siteTitle }) {
   <div class="antialiased bg-gray-700 font-sans text-white mb-20 sticky top-0">
     <div class="lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2 mr-auto">
       <h1 id="test-id" class="m-0 hover:text-blue-200 font-light tracking-wider">
-        <Link
-          to="/"
-         >
-          {siteTitle}
+        <Link to="/">
+          <StaticImage src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="tracedSVG"/>
         </Link>
       </h1>
 
