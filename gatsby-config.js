@@ -12,7 +12,12 @@ module.exports = {
 		
 		/* no idea what this does */
     'gatsby-plugin-react-helmet',
+		/* Styling */
+		'gatsby-plugin-postcss',
 		/* Load images first */
+		'gatsby-plugin-image',
+		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -83,11 +88,7 @@ module.exports = {
 				},
       },
     },
-		/* Styling */
-		'gatsby-plugin-postcss',
 		/* something something idk */
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
