@@ -151,7 +151,7 @@ const Header = function({ siteTitle }) {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="/about/competitions/acot"
+                      href="/competitions/acot"
                       className={classNames(
                         active ? 'bg-gray-600 text-gray-100' : 'text-white',
                         'block px-4 py-2 text-sm'
@@ -164,7 +164,7 @@ const Header = function({ siteTitle }) {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="/about/competitions/scho"
+                      href="/competitions/scho"
                       className={classNames(
                         active ? 'bg-gray-600 text-gray-100' : 'text-white',
                         'block px-4 py-2 text-sm'
@@ -177,7 +177,7 @@ const Header = function({ siteTitle }) {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="/about/competitions/stc"
+                      href="/competitions/stc"
                       className={classNames(
                         active ? 'bg-gray-600 text-gray-100' : 'text-white',
                         'block px-4 py-2 text-sm'
@@ -190,7 +190,7 @@ const Header = function({ siteTitle }) {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="/about/competitions/wcc"
+                      href="/competitions/wcc"
                       className={classNames(
                         active ? 'bg-gray-600 text-gray-100' : 'text-white',
                         'block px-4 py-2 text-sm'
