@@ -150,6 +150,19 @@ const Header = function({ siteTitle }) {
               className="origin-top-right absolute right-0 mt-2 w-28 rounded shadow-xl bg-gray-700 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
             >
               <div className="py-1">
+							<Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="/competitions/competitors_guide"
+                      className={classNames(
+                        active ? 'bg-gray-600 text-gray-100' : 'text-white',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      Competitor's Guide
+                    </a>
+                  )}
+                </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <a
@@ -163,33 +176,7 @@ const Header = function({ siteTitle }) {
                     </a>
                   )}
                 </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="/competitions/scho"
-                      className={classNames(
-                        active ? 'bg-gray-600 text-gray-100' : 'text-white',
-                        'block px-4 py-2 text-sm'
-                      )}
-                    >
-                      SChO
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="/competitions/stc"
-                      className={classNames(
-                        active ? 'bg-gray-600 text-gray-100' : 'text-white',
-                        'block px-4 py-2 text-sm'
-                      )}
-                    >
-                      STC
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
+								<Menu.Item>
                   {({ active }) => (
                     <a
                       href="/competitions/wcc"
@@ -199,6 +186,32 @@ const Header = function({ siteTitle }) {
                       )}
                     >
                       WCC
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="/competitions/socc"
+                      className={classNames(
+                        active ? 'bg-gray-600 text-gray-100' : 'text-white',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      SOCC
+                    </a>
+                  )}
+                </Menu.Item>
+								<Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="/competitions/scho"
+                      className={classNames(
+                        active ? 'bg-gray-600 text-gray-100' : 'text-white',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      SChO
                     </a>
                   )}
                 </Menu.Item>
