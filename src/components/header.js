@@ -49,8 +49,9 @@ const Header = function({ siteTitle }) {
           </div>
         </li>
 
-        {/* Dropdown for courses */}
-				<Menu as="div" className="relative inline-block text-left ">
+			{/* Dropdown for courses */}
+			{/*
+			<Menu as="div" className="relative inline-block text-left ">
       {({ open }) => (
         <>
           <div>
@@ -121,6 +122,7 @@ const Header = function({ siteTitle }) {
         </>
       )}
     </Menu>
+		*/}
 
     {/* Dropdown for competitions */}
     <Menu as="div" className="relative inline-block text-left ">
