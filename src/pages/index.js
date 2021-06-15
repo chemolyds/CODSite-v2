@@ -14,41 +14,33 @@ export default function Home() {
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
 				<StaticImage src="../images/cods_banner.png" placeholder="blurred"/>
 
-				<div class="bg-gray-200" style={{padding: '1.45rem 1.0875rem 1.45rem'}}>
-					<h2 class="text-center">CODS is a global community made for Chemistry Olympiad participants</h2>
-					<h3 class="text-center font-normal">Haven't joined the community yet? You can join here.</h3>
-					<h3>Our Mission is to make Competitive Chemistry more...</h3>
+				<div class="bg-blue-50 px-20 py-10">
+					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
+					<h3 class="text-center font-light">Haven't joined the community yet? You can join <a class="text-blue-400" target="_blank" href="https://discord.gg/chemistry">here</a>.</h3>
+					<h3 class="font-light mt-10">Our Mission is to make Competitive Chemistry more...</h3>
 					<dl class="md:grid md:grid-cols-3">
-						<div class="relative">
-							<dt>
-								<p class="mb-2 text-lg leading-5 front-medium text-gray-900">
-									Accessible
-								</p>
-							</dt>
-							<dd class="text-base">
-								to a wider audience. We run four annual competitions for anyone around the world to compete in and provide guides for anyone to get started.
-							</dd>
+
+						<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+ 							 <div>
+    							<h2 class="text-gray-800 text-3xl font-medium">Competitive</h2>
+								<p class="mt-2 text-gray-700 text-lg">by leveling out the playing field of competitive chemistry, we hope to increase the standards of Chemistry Olympiads</p>
+							</div>
 						</div>
-						<div class="relative">
-							<dt>
-								<p class="mb-2 text-lg leading-5 front-medium text-gray-900">
-									Fair
-								</p>
-							</dt>
-							<dd class="text-base">
-								for everyone by providing guides for all levels of participants. We also provide high quality custom study resources to asssist your journey.
-							</dd>
+
+						<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+ 							 <div>
+    							<h2 class="text-gray-800 text-3xl font-medium">Accessible</h2>
+								<p class="mt-2 text-gray-700 text-lg">to a wider audience. We run four annual competitions for anyone around the world to compete in and provide guides for anyone to get started.</p>
+							</div>
 						</div>
-						<div class="relative">
-							<dt>
-								<p class="mb-2 text-lg leading-5 front-medium text-gray-900">
-									Competitive
-								</p>
-							</dt>
-							<dd class="text-base">
-								by leveling out the playing field of competitive chemistry, we hope to increase the standards of Chemistry Olympiads
-							</dd>
+
+						<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+ 							 <div>
+    							<h2 class="text-gray-800 text-3xl font-medium">Fair</h2>
+								<p class="mt-2 text-gray-700 text-lg">for everyone by providing guides for all levels of participants. We also provide high quality custom study resources to asssist your journey.</p>
+							</div>
 						</div>
+
 					</dl>
 				</div>
 
