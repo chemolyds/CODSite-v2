@@ -107,21 +107,22 @@ export default function Home() {
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
 									<ul>
-										<li>Q1: <Link to="competitions/stc">STC</Link></li>
-										<li>Q2: <Link to="competitions/scho">SChO (CODSchO)</Link></li>
-										<li>Q3: <Link to="competitions/acot">ACOT</Link></li>
-										<li>Q4: <Link to="compeitions/wcc">WCC</Link></li>
+										<li><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
+										<li><Link to="competitions/acot">ACOT</Link></li>
+										<li><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
+										<li><Link to="competitions/socc">SOCC</Link></li>
+										<li><Link to="compeitions/scho">SChO</Link></li>
 									</ul>
 								</dd>
 							</div>
 							<div class="relative border border-gray-400">
 								<dt>
 									<h2 class="mt-2 mb-2">
-										CODSNotes
+										Courses (WIP)
 									</h2>
 								</dt>
 								<dd class="text-base">
-								Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
+								Made specifically for chemistry olympiad participants, these courses will go over the fundamentals required for competitive chemistry, providing a variety of practice problems and tips & tricks for competitors at any skill level.
 								</dd>
 							</div>
 						</dl>
