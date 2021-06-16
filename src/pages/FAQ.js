@@ -10,7 +10,7 @@ export default function FAQ({ data }) {
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				{
 					data.allFile.nodes.filter(node => node.childMdx).map(node => { return (
-						<div class="relative">
+						<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 							<Link to={node.childMdx.slug}>
 							<dt>
 								<p class="mb-2 text-lg leading-5 front-medium text-gray-900">
