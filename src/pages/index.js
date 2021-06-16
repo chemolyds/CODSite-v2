@@ -57,7 +57,7 @@ export default function Home() {
 					<div class="text-center">
 						<h2>Open Educational Resources at CODSite</h2>
 						<dl class="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<Link to="https://www.youtube.com/channel/UCyO5Wn2qKDRYWC-F5EfN2kA">
 								<dt>
 									<h2 class="mt-2 mb-2">
@@ -69,7 +69,7 @@ export default function Home() {
 								</dd>
 								</Link>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										CODSNotes
@@ -79,17 +79,17 @@ export default function Home() {
 									Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Guides
 									</h2>
 								</dt>
-								<dd class="text-base">
+								<dd class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 									Our staff is dedicated to writing guides for all levels. From introductory guides to those for the IChO level, there is a guide for anyone written by the best in the competitive chemistry scene.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Past Papers
@@ -99,7 +99,7 @@ export default function Home() {
 									All of our past competition papers are released to the public and can be accessed immediately. Click here to access our list of past exams.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Competitions
@@ -116,7 +116,7 @@ export default function Home() {
 									</ul>
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Courses (WIP)
