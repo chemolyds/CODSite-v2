@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import SEO from '../components/seo'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import '../layouts/layout.css'
 
 export default function Home() {
@@ -128,8 +129,8 @@ export default function Home() {
 						</dl>
 					</div>
 				</div>
-
 			</div>
+			<Footer/>
 		</>
 	)
 }
