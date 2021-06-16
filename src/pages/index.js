@@ -13,7 +13,7 @@ export default function Home() {
 			<SEO title="Home" keywords={['Chem Competition']} />
 			<Header siteTitle="CODSite" />
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
-				<StaticImage src="../images/welcome.png" placeholder="blurred"/>
+				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
 
 				<div class="bg-blue-50 px-20 py-10">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
