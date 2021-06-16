@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
 import Layout from '../layouts/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function guides({ data }) {
 	return (
 		<Layout>
-			<h1>Guides</h1>
+			<StaticImage src="../images/guides.png" placeholder="blurred"/>
 			<ul>
 			{
 				data.allFile.nodes.filter(node => node.childMdx).map(node => {
