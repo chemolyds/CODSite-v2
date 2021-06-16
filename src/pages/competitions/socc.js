@@ -1,12 +1,12 @@
 import React from 'react'
-import { graphql, Link } from "gatsby"
-import Layout from '../layouts/layout'
+import { graphql, Link } from 'gatsby'
+import Layout from '../../layouts/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
-export default function FAQ({ data }) {
+export default function acot({ data }) {
 	return (
 		<Layout>
-			<StaticImage src="../images/FAQs.png" placeholder="blurred"/>
+			<StaticImage src="https://i.imgur.com/zeOeWag.png" placeholder="blurred"/>
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				{
 					data.allFile.nodes.filter(node => node.childMdx).map(node => { return (
@@ -18,27 +18,26 @@ export default function FAQ({ data }) {
 								</p>
 							</dt>
 							<dd class="text-base text-gray-500">
-								{node.childMdx.excerpt}
+								{node.childMdx.frontmatter.description}
 							</dd>
 							</Link>
 						</div>
 					)})
 				}
 			</dl>
-			
 		</Layout>
 	)
 }
 
 export const query = graphql`
 query {
-	allFile(filter: {sourceInstanceName: {eq: "FAQ"}}) {
+	allFile(filter: {sourceInstanceName: {eq: "SOCC"}}) {
 		nodes {
 			childMdx {
 				slug
-				excerpt
 				frontmatter {
 					title
+          description
 				}
 			}
 		}

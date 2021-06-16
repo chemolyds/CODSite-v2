@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import SEO from '../components/seo'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import '../layouts/layout.css'
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 			<SEO title="Home" keywords={['Chem Competition']} />
 			<Header siteTitle="CODSite" />
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
-				<StaticImage src="../images/welcome.png" placeholder="blurred"/>
+				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
 
 				<div class="bg-blue-50 px-20 py-10">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
@@ -56,7 +57,7 @@ export default function Home() {
 					<div class="text-center">
 						<h2>Open Educational Resources at CODSite</h2>
 						<dl class="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<Link to="https://www.youtube.com/channel/UCyO5Wn2qKDRYWC-F5EfN2kA">
 								<dt>
 									<h2 class="mt-2 mb-2">
@@ -68,7 +69,7 @@ export default function Home() {
 								</dd>
 								</Link>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										CODSNotes
@@ -78,17 +79,17 @@ export default function Home() {
 									Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Guides
 									</h2>
 								</dt>
-								<dd class="text-base">
+								<dd class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 									Our staff is dedicated to writing guides for all levels. From introductory guides to those for the IChO level, there is a guide for anyone written by the best in the competitive chemistry scene.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Past Papers
@@ -98,7 +99,7 @@ export default function Home() {
 									All of our past competition papers are released to the public and can be accessed immediately. Click here to access our list of past exams.
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
 										Competitions
@@ -107,28 +108,29 @@ export default function Home() {
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
 									<ul>
-										<li>Q1: <Link to="competitions/stc">STC</Link></li>
-										<li>Q2: <Link to="competitions/scho">SChO (CODSchO)</Link></li>
-										<li>Q3: <Link to="competitions/acot">ACOT</Link></li>
-										<li>Q4: <Link to="compeitions/wcc">WCC</Link></li>
+										<li><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
+										<li><Link to="competitions/acot">ACOT</Link></li>
+										<li><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
+										<li><Link to="competitions/socc">SOCC</Link></li>
+										<li><Link to="compeitions/scho">SChO</Link></li>
 									</ul>
 								</dd>
 							</div>
-							<div class="relative border border-gray-400">
+							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 								<dt>
 									<h2 class="mt-2 mb-2">
-										CODSNotes
+										Courses (WIP)
 									</h2>
 								</dt>
 								<dd class="text-base">
-								Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
+								Made specifically for chemistry olympiad participants, these courses will go over the fundamentals required for competitive chemistry, providing a variety of practice problems and tips & tricks for competitors at any skill level.
 								</dd>
 							</div>
 						</dl>
 					</div>
 				</div>
-
 			</div>
+			<Footer/>
 		</>
 	)
 }
