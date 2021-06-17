@@ -85,7 +85,7 @@ export default function Home() {
 										Guides
 									</h2>
 								</dt>
-								<dd class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+								<dd class="text-base">
 									Our staff is dedicated to writing guides for all levels. From introductory guides to those for the IChO level, there is a guide for anyone written by the best in the competitive chemistry scene.
 								</dd>
 							</div>
