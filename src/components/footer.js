@@ -14,7 +14,7 @@ const Footer = function() {
 					</li>
 					<li style={{display: 'inline'}}>
 						<div class="hover:text-gray-100 m-0 py-2 px-4 relative float-right">
-							<Link to="/competitions">Compeitions</Link>
+							<Link to="/competitions">Competitions</Link>
 						</div>
 					</li>
 					<li style={{display: 'inline'}}>

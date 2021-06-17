@@ -15,7 +15,7 @@ export default function Home() {
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
 				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
 
-				<div class="bg-blue-50 px-20 py-10">
+				<div class="bg-blue-50 px-20 py-10 mt-16">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
 					<h3 class="text-center font-light">Haven't joined the community yet? You can join <a class="text-blue-400" target="_blank" href="https://discord.gg/chemistry">here</a>.</h3>
 					<h3 class="font-light mt-10">Our Mission is to make Competitive Chemistry more...</h3>
@@ -46,7 +46,7 @@ export default function Home() {
 				</div>
 
 				<div style={{padding: '1.45rem 1.0875rem 1.45rem'}}>
-					<h2>What is CODSite for?</h2>
+					<h2 class="font-medium mt-10">What is CODSite for?</h2>
 					<p>
 						CODSite is an all-purpose website made for our community (competitive Chemistry enthusiasts).
 						Everything on CODSite is free to use for anybody, no sign-ups or memberhsip required.
@@ -55,12 +55,12 @@ export default function Home() {
 					</p>
 
 					<div class="text-center">
-						<h2>Open Educational Resources at CODSite</h2>
+						<h2 class="font-medium tracking-wide mt-20 mb-16">Open Educational Resources at CODSite</h2>
 						<dl class="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<Link to="https://www.youtube.com/channel/UCyO5Wn2qKDRYWC-F5EfN2kA">
 								<dt>
-									<h2 class="mt-2 mb-2">
+									<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Lectures
 									</h2>
 								</dt>
@@ -69,9 +69,9 @@ export default function Home() {
 								</dd>
 								</Link>
 							</div>
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<dt>
-									<h2 class="mt-2 mb-2">
+								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										CODSNotes
 									</h2>
 								</dt>
@@ -79,19 +79,19 @@ export default function Home() {
 									Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
 								</dd>
 							</div>
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<dt>
-									<h2 class="mt-2 mb-2">
+								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Guides
 									</h2>
 								</dt>
-								<dd class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+								<dd class="text-base">
 									Our staff is dedicated to writing guides for all levels. From introductory guides to those for the IChO level, there is a guide for anyone written by the best in the competitive chemistry scene.
 								</dd>
 							</div>
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<dt>
-									<h2 class="mt-2 mb-2">
+								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Past Papers
 									</h2>
 								</dt>
@@ -99,26 +99,26 @@ export default function Home() {
 									All of our past competition papers are released to the public and can be accessed immediately. Click here to access our list of past exams.
 								</dd>
 							</div>
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<dt>
-									<h2 class="mt-2 mb-2">
+								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Competitions
 									</h2>
 								</dt>
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
 									<ul>
-										<li><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
-										<li><Link to="competitions/acot">ACOT</Link></li>
-										<li><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
-										<li><Link to="competitions/socc">SOCC</Link></li>
-										<li><Link to="compeitions/scho">SChO</Link></li>
+										<li class="text-blue-400 mt-2"><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
+										<li class="text-blue-400"><Link to="competitions/acot">ACOT</Link></li>
+										<li class="text-blue-400"><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
+										<li class="text-blue-400"><Link to="competitions/socc">SOCC</Link></li>
+										<li class="text-blue-400"><Link to="compeitions/scho">SChO</Link></li>
 									</ul>
 								</dd>
 							</div>
-							<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
+							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5">
 								<dt>
-									<h2 class="mt-2 mb-2">
+								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Courses (WIP)
 									</h2>
 								</dt>

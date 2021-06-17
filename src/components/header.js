@@ -20,7 +20,7 @@ const Header = function({ siteTitle }) {
   const [isShownAbout, setIsShownAbout] = useState(false);
 
   return (
-  <div class="antialiased bg-gray-700 font-sans text-white mb-20 sticky top-0">
+  <div class="antialiased bg-gray-700 font-sans text-white mb-20 sticky py-3.5 top-0 z-50">
     <div class="lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2 mr-auto">
       <h1 id="test-id" class="m-0 hover:text-blue-200 font-light tracking-wider">
         <Link to="/">
@@ -147,7 +147,7 @@ const Header = function({ siteTitle }) {
           >
             <Menu.Items
               static
-              className="origin-top-right absolute right-0 mt-2 w-28 rounded shadow-xl bg-gray-700 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+              className="origin-top-right absolute right-0 mt-2 w-40 rounded shadow-xl bg-gray-700 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
             >
               <div className="py-1">
 							<Menu.Item>
