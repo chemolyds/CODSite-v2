@@ -1,0 +1,24 @@
+@font-face {
+	font-family: Exo2-Regular;
+	src: url("./Exo2-Regular.ttf");
+}
+
+@font-face {
+	font-family: OpenSans-Light;
+	src: url("./OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url("./Raleway-VariableFont_wght.ttf")
+}
+
+@font-face {
+	font-family: Raleway-Black;
+	src: url("./Raleway-Black.ttf")
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src: url("./Raleway-Bold.ttf")
+}
