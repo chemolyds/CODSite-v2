@@ -37,7 +37,7 @@ const Footer = function() {
 			
 			<div class="">
 				<p class="my-0 py-0 text-center">CODSite was made by our community and staff members on the CODServer. If you would like to contribute, visit our <Link to="https://github.com/Jerdan1980/CODSite-v2">Github</Link></p>
-				<p class="my-0 py-0 text-center text-gray-400">For inquiries, click <Link to="/about">here</Link>. For donations, contact chemolyds@gmail.com</p>
+				<p class="my-0 py-0 text-center text-gray-400">For inquiries, click <Link to="/about" class="text-blue-300">here</Link>. For donations, contact chemolyds@gmail.com</p>
 				<h1 class="my-0 py-0 text-center">
 					-
 					<span style={{"color": "#e70011"}}> C</span>
