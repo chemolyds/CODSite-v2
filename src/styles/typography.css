@@ -22,3 +22,8 @@
 	font-family: Raleway-Bold;
 	src: url("./Raleway-Bold.ttf")
 }
+
+@font-face {
+	font-family: "Nunito-Regular";
+	src: url("./Nunito-Regular.ttf")
+}
