@@ -5,13 +5,13 @@ description: Second part of Kinetics
 
 # Introduction
 
-In this module, we will look into chemical kinetics from as microscopic perspective, in which we will learn about the **Arrhenius equation**, **elementary reactions**, and **reaction mechanisms**.
-We will make a lot of connections with the macrosckopic properties introduced in **Kinetics I**, so please make sure to read that guide before reading this one.
+In this module, we will look at chemical kinetics from a microscopic perspective, in which we will learn about the **Arrhenius equation**, **elementary reactions**, and **reaction mechanisms**.
+We will make a lot of connections with the macroscopic properties introduced in **Kinetics I**, so please make sure to read that guide before reading this one.
 
 
 # Rate Contants and temperature
 
-Rate constants of all reactions depends heavily on temperature, albeit slightly differently.
+Rate constants of all reactions depend heavily on temperature, albeit slightly differently.
 Most reactions are said to show **Arrhenius behavior**, in which the rate increases exponentially with the reciprocal of temperature.
 However, not all reactions illustrate this behavior.
 Some reactions, such as explosives or enzyme-controlled reactions, may show different behavior.
@@ -37,9 +37,9 @@ The above is known as the **Arrhenius equation**.
 The constant $A$ is known as the **pre-exponential factor** that is experimentally determined.
 Further detailed discussion will be, again, illustrated in **Kinetics IV**.
 
-There are important things to take away from the **Arrhenius equation**, while you won't use this form of the equation very often.
+There are important things to take away from the **Arrhenius equation**, although you won't use this form of the equation very often.
 
-First, the **greater** the activation energy, the **stronger** the temperature dependent of the rate constant is.
+First, the **greater** the activation energy, the **stronger** the temperature dependence of the rate constant.
 For reactions that involve very low activation energy (or perhaps, even **negative** activation energies), you could approximate that the rate constant is relatively unaffected by temperature (example: photolysis, radical reactions).
 For reactions that involve rather high activation energies, this is not possible.
 
@@ -50,20 +50,20 @@ $$
 $$
 
 This allows the comparison of two rate constants at different temperatures.
-As long as you know the activation energy and one of the rate constants at a certain temperature, you can calculate the rate constant for any temperature at a reasonable range.
+As long as you know the activation energy of a reaction and one of the rate constants at a certain temperature, you can calculate the rate constant at any other temperature within a reasonable range.
 
 # Elementary reactions
 
 Elementary reactions look very similar to normal chemical reactions, but they have a critical difference.
-Elementary reactions are reactions that occur on the **microscopic** scale between **molecules**.
-Therefore, elementary reactions may look **very** different from the **macroscopic** chemical reactions that you see, but the initial **reactants** and final **products** must match up.
+Elementary reactions are reactions that occur on the **microscopic** scale between **molecules**. 
+As such, elementary reactions may look **very** different from the **macroscopic** chemical reactions that you see, but the overall **reactants** and **products** in the total series of elementary reactions involved in the reaction must match up. 
 
 $$
 \textrm{reactants} \rightarrow \textrm{intermediates} \rightarrow {products}
 $$
 
-**Intermediates** are **not** present in the chemical equation, and **cannot** be generally observed.
-**Reaction mechanisms** illustrate the steps in which reactants become intermediates, and how intermediates become products.
+**Intermediates** are species formed in elementary reactions during the reaction. They are neither reactants nor a products and are, as such, **not** present in the chemical equation, and generally **cannot** be observed.
+**Reaction mechanisms** are the series of elementary steps that take place during the overall reaction, in which reactants become intermediates, and intermediates become products.
 
 An example of a **reaction mechanism** is shown below.
 
@@ -73,12 +73,12 @@ $$
 \textbf{Step 2: } O_2 + N_2O_2 \rightarrow NO_2 + NO_2
 $$
 
-Reaction mechanisms **cannot** be determined experimentally (they are proposed), but they can be used to support the experimentally determined rate law.
+Reaction mechanisms **cannot** be determined experimentally (they are proposed), but they can be used to support an experimentally determined rate law.
 When proposing a mechanism, you must keep three things in mind:
 
 1. The elementary steps must add up to the overall balanced chemical equation.
-2. The elementary steps must be reasonable.
-3. The mechanism must correlate with the ovserved experimental rate law.
+2. The elementary steps must be reasonable. Steps involving the collision of three or more molecules are not generally reasonable, for example.
+3. The mechanism must correlate with the observed experimental rate law.
 
 Note that different mechanisms can point to the same rate law:
 
@@ -88,20 +88,20 @@ $$
 \textbf{Step 2: } NO_3 + NO \rightarrow NO_2 + NO_2
 $$
 
-_Unlike_ chemical equations, its rate law **can** be written from elemtary reactions.
+_Unlike_ the overall reaction, the rate law of an elementary reaction **can** be written from its chemical equation and is given by the rate constant $k$ multiplied by the concentration of each reactant in the step to an exponent of their coefficient.
 
 The Rate Laws of Elementary Reactions
 | Molecularity | Reaction type | Rate law |
 | :-- | :-- | :-- |
 | 1 | $A \rightarrow P$ | $v = k_r [A]$ |
-| 2 | $A + A \rightarrow P$ | $v = k_r [A]^2$ |
+| 2 | $2 A (A + A) \rightarrow P$ | $v = k_r [A]^2$ |
 | 2 | $A + B \rightarrow P$ | $v = k_r [A] [B]$ |
 | 3 (unlikely) | $A + B + C \rightarrow P$ | $v = k_r [A] [B] [C]$ |
 
 
 ## Reaction Mechanisms
 
-Potential energy graphs are important for chemical kinetics.
+Potential energy graphs are very important in chemical kinetics. Here we used them to understand how to form a rate law from a reaction mechanism.
 The graph below is an example of a potential energy graph for the above mechanism:
 
 
@@ -112,22 +112,22 @@ $$
 \textbf{Step 2: } NO_3 + NO \rightarrow NO_2 + NO_2
 $$
 
-The highest point of the potential energy graph (elementary reaction with the highest activation energy) is the **rate-determining step (RDS)**, which will determine the rate of the overall reaction.
-Do note that, if there are multiple mechanisms that can lead the same reactants into products, the mechanism with the smallest rate-determining step is preferred (this is known as side-stepping).
+The highest point of the potential energy graph (elementary reaction with the highest activation energy) is the **rate-determining step (RDS)**. The rate law of the individual step will be the rate of the overall reaction. This step is known as the "slow" step, and is likened to the step in an assembly line that takes to longest to do, therefore serving as a "bottleneck" limiting the overall speed of the process. 
+Do note that, if there are multiple feasible reaction mechanisms for a given reaction, the mechanism with the smallest rate-determining step is preferred (this is known as side-stepping).
 
-The first step is the "fast" step with the rate law
+In the reaction mechanism above, the first step is the "fast" step. The rate law of this step is
 
 $$
 v = k_1 [NO] [O_2]
 $$
 
-But is not included in the overall rate law.
-The second step is the "slow" step with the highest activation energy with the rate law
+But it is not included in the overall rate law.
+The second step is the "slow" step with the highest activation energy. The rate law of this step is
 
 $$
 v = k_2 [NO_3] [NO]
 $$
 
 And is equal to the rate of the overall reaction.
-Do note that, **intermediates** should **not** be in the overall rate law.
+This rate law however contains the intermediate $NO_3$ which should **not** be in the final overall rate law.
 Later on, in **Kinetics III**, you will learn how to remove these intermediates from the rate law.
