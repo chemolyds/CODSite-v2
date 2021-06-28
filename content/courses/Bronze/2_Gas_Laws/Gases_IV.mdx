@@ -1,0 +1,97 @@
+---
+title: Gas Laws IV
+description: All the other common gas concepts
+---
+
+<img src="https://i.imgur.com/nbzjrYY.png"/>
+
+# Introduction
+
+This module will cover all of the other concepts that are frequently taught in a regular chemistry course.
+While a lot of these concepts don't make an explicit appearance in competitive chemistry, it is important that you know them very well.
+
+
+# Effusion and Diffusion
+
+**Effusion** is the escape of gas molecuels through a small pinhole into a vacuum or a region of lower pressure.
+A common example of effusion is air escaping from a bicycle tire valve.
+
+**Diffusion** is the gradual dispersal of one substance through another substance.
+A common example of diffusion is a bottle of vinegar gradually dispersing its pungent smell when it is opened.
+
+**Graham's law** is frequently used for **both** effusion and diffusion:
+
+$$
+\frac{(\textrm{Rate of effusion of A molecules})}{(\textrm{Rate of effusion of B moleucles})} = \sqrt{\frac{M_B}{M_A}} = \frac{t_B}{t_A}
+$$
+
+It emphasizes that at a constnat temperature, the rate of effusion (or diffusion) is proportional to the reciprocal square root of molar mass, a relationship that was illustrated by the kinetic molecular theory (KMT) in the previous module.
+
+While problems involving Graham's law in competitive chemistry is uncommon, sometimes, the "time it took" for gases to effuse is given instead of the rate itself.
+
+
+# Maxwell-Boltzmann Distribution
+
+The **Maxwell-Boltzmann Distribution** illustrates the distribution of the speeds of gas particles at a certain temperature.
+This was also derived from the **KMT** (the derivation is way beyond the scope of this module, including the author himself) and the equation looks something like this:
+
+$$
+f(v) = 4\pi (\frac{M_r}{2\pi RT})^{3/2} v^2 e^{-Mv^2 / 2RT}
+$$
+
+You are not expected to know this formula, as it is hard to utilize.
+However, you should be able to interpret graphs and its meaning.
+As we learned from the KMT, the average speed of gas molecuels is dependent on **temperature** and **molar mass:**
+
+$$
+v_{rms} = \sqrt{\frac{3RT}{M_r}}
+$$
+
+This is illustrated by the Maxwell-Boltzmann distributions shown for different molar masses and for different temperatures:
+
+<img src="https://i.imgur.com/MQJiEZK.png"/>
+
+As shown by the left graph, **lighter molecules** such as helium and neon have **high average speeds** but also **wider intervals**, meaning that hte speed of gas molecules can vry heavily.
+As shown by the right graph, **higher temperatures** result in **higher average molecular speeds** but also **wider intervals**, a very similar result.
+
+
+# Real Gases
+
+The ideal gas law is a **limiting law**; it is increasingly valid as the pressure of the gas decreases, an observation pointed out in the previuos module (KMT).
+
+Becuase of these approximations, the ideal gas law falls short in terms of accuracy when it comes to non-idal conditions, and therefore, more complex models are theorized to account for those situations.
+
+**Real gases** are gases in the real world that deviate from the ideal gas model, either due to high pressure or the effects of **intermolecular forces**.
+Its derivation from the ideal gas law is illustrated by the **compression factor**, z:
+
+$$
+z = \frac{pV}{nRT}
+$$
+
+The compression factor of an ideal gas, which has no intermolecular forces, is equal to 1.
+
+if $z > 1$, **repulsive forces dominate** and tends to drive the molecuels apart.
+We expect this to occur at **high pressures**, where the average distance between molecules is small, leading to much more repulsions between gas molecules being significant.
+
+If $z < 1$, **attractive forces dominate** and tends to draw the molecules together.
+We expect this to occur with molecuels that have **strong** intermolecular forces, such as water or ammonia.
+
+<img src="https://i.imgur.com/M1J8Xug.gif"/>
+
+To take into consideration these two factors, the **van der Waals equation** is commonly used:
+
+$$
+(P + \frac{an^2}{V^2}) (V - nb) = nRT
+$$
+
+The **van der Waal parameters**, $a$ and $b$, are temperature independent and unique to each gas.
+These are "fixes" for the problems that the ideal gas law suffers from.
+
+The $a$ coefficient represents **attractions** and takes into consideration of the intermolecular forces between gas molecules.
+A larger $a$ coefficient represents greater attractions.
+
+The $b$ coefficient represents **repulsions** and takes into consideration of the volume of molecules.
+A larger $b$ coefficient represents larger molecules.
+
+Bother of these variables will be provided to you in most of the questions.
+The equation is worth knowing, but in most cases, will be provided in the question if requried.

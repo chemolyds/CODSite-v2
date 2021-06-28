@@ -108,11 +108,11 @@ export default function Home() {
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
 									<ul>
-										<li class="text-blue-400 mt-2"><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
-										<li class="text-blue-400"><Link to="competitions/acot">ACOT</Link></li>
-										<li class="text-blue-400"><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
-										<li class="text-blue-400"><Link to="competitions/socc">SOCC</Link></li>
-										<li class="text-blue-400"><Link to="compeitions/scho">SChO</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/acot">ACOT</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/socc">SOCC</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="compeitions/scho">SChO</Link></li>
 									</ul>
 								</dd>
 							</div>
