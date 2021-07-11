@@ -1,0 +1,42 @@
+[
+	{
+		"category": "Resources for U.S. Participants",
+		"resources": [
+			{
+				"title": "Past USNCO Exams",
+				"description": "An Invaluable resource for USNCO participants. It provides all of the past USNCO exams, and some of the more recent exams have solutions attatched to them as well. We recommend you trying these out as soon as you have covered your fundamentals!",
+				"image": "https://imgur.com/wf2osaK.png"
+			},
+			{
+				"title": "USNCO Quizzes",
+				"description": "Made by Andrew Ni, this resource can be useful if you would like to practice a particular topic in USNCO.",
+				"image": "https://imgur.com/QTJQmkr.png"
+			},
+			{
+				"title": "Atkin's Chemical Principles",
+				"description": "Atkin's Chemical Principles is an invaluable textbook for not oly U.S. participants, but for all competitive chemistry learners. It is frequently used as a textbook for Honors courses in undergraduate introductory chemistry.",
+				"image": "https://imgur.com/xtJ8vkk.png"
+			}
+		]
+	},
+	{
+		"category": "Resources for IChO Participants",
+		"resources": [
+			{
+				"title": "IChO Recommendations",
+				"description": "Written by a Gold IChO Medalist ('20) and CODS staff, Anugrah goes over what practice problems you should utilize to prepare for IChO.",
+				"image": "https://imgur.com/EK5Z0Wu.png"
+			},
+			{
+				"title": "Past IChO Exams",
+				"description": "A three-part book has been made that compiles the past 50 years of ICho exams.",
+				"image": "https://imgur.com/8w1YrYQ.png"
+			},
+			{
+				"title": "Past IChO Exams by Topic",
+				"description": "A compilation of Past IChO questions by topic.",
+				"image": "https://imgur.com/hoaAVRh.png"
+			}
+		]
+	}
+]
