@@ -24,7 +24,9 @@ export default function resources() {
 		<Layout>
 			<h1>Resources</h1>
 
-			<h2 class="text-center">General Resources</h2>
+			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+				<h2 class="text-center">General Resources</h2>
+			</div>
 			{
 				GeneralResources.map(r => {
 					return (
@@ -39,14 +41,17 @@ export default function resources() {
 			{stuff.map(c => {
 				return (
 					<div>
-						<h2 class="text-center">{c.category}</h2>
-						<div class="grid grid-flow-col gap-5">
+						<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+							<h2 class="text-center">{c.category}</h2>
+							{c.description ? <p class="text-center">{c.description}</p> : <></>}
+						</div>
+						<div class="md:grid md:grid-flow-col gap-5">
 							{c.resources.map(r => {
 									return (
-										<div class="text-center">
-											<img src={r.image} class="h-64"/>
-											<h3>{r.title}</h3>
-											<p>{r.description}</p>
+										<div class="text-center sm:mb-10">
+											<img src={r.image} class="h-64 mb-1"/>
+											<p class="font-bold mt-0 mb-1">{r.title}</p>
+											<p class="text-sm">{r.description}</p>
 										</div>
 									)
 							})}
