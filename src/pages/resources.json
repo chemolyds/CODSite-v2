@@ -1,5 +1,25 @@
 [
 	{
+		"category": "General Resources",
+		"resources": [
+			{
+				"title": "CODS Courses (WIP)",
+				"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We updte the courses every week and anyone can contribute to the project. Check it out!",
+				"image": "https://imgur.com/mQentbJ.png"
+			},
+			{
+				"title": "Chemguide",
+				"description": "Chemguide is a very good learning resource. Made by Jim Clark, its initial purpose was to provide U.K. students a place to learn about chemistry. However, this resource is extremely helpful for chemistry Olympiad participants as well, and the inorganic chemistry section in particular has been proven to be invaluable.",
+				"image": "https://imgur.com/upd9Nwt.png"
+			},
+			{
+				"title": "Chemistry LibreTexts",
+				"description": "Chemistry LibreTexts can also be great help as well. Content that is present in Chemistry Olympiads that aren't taught in high school can often be learned from this website. You should check it out!",
+				"image": "https://imgur.com/F2HO00G.png"
+			}
+		]
+	},
+	{
 		"category": "Resources for U.S. Participants",
 		"resources": [
 			{
@@ -45,7 +65,7 @@
 		"resources": [
 			{
 				"title": "Chemistry by Zumdahl",
-				"description": "A very good introductory book, easy-to-understand explanations, excellent practice problems, **does not** cover all fo the necessary material required.",
+				"description": "A very good introductory book, easy-to-understand explanations, excellent practice problems, does not cover all fo the necessary material required.",
 				"image": "https://imgur.com/jxQM3Tw.png"
 			},
 			{
@@ -62,6 +82,48 @@
 				"title": "Organic Chemistry by Clayden",
 				"description": "Very good intermediate book, outstanding explanations, outstanding practice problems, much more detailed than Klein, all you need for IChO.",
 				"image": "https://imgur.com/9Ed14h3.png"
+			}
+		]
+	},
+	{
+		"category": "Past CODS Competitions ('20)",
+		"resources": [
+			{
+				"title": "SOCC 2020",
+				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests."
+			},
+			{
+				"title": "SChO 2020",
+				"description": "SChO '20 was a mock IChO competition for the highest level of competitors."
+			},
+			{
+				"title": "ACOT 2020",
+				"description": "ACOT '20 was a PVP tournament where participants had to answer questions with speed an accuracy compared to their opponent."
+			},
+			{
+				"title": "WCC 2020",
+				"description": "WCC '20 was a mock USNCO exam that replicated its difficulty, structure, and format."
+			}
+		]
+	},
+	{
+		"category": "Past CODS Competitions ('21)",
+		"resources": [
+			{
+				"title": "SOCC 2021",
+				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests."
+			},
+			{
+				"title": "SChO 2021",
+				"description": "SChO '20 was our first competition that implemented our tier system, providing a wide range of difficulty."
+			},
+			{
+				"title": "ACOT 2021",
+				"description": "- Coming Soon -"
+			},
+			{
+				"title": "WCC 2021",
+				"description": "- Coming Soon -"
 			}
 		]
 	}
