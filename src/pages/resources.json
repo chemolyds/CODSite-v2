@@ -38,5 +38,31 @@
 				"image": "https://imgur.com/hoaAVRh.png"
 			}
 		]
+	},
+	{
+		"category": "Textbooks",
+		"description": "Here are some textbooks that we generally recommend for all chemistry Olympiad competitors. For more information, please refer to our introductory guide in courses.",
+		"resources": [
+			{
+				"title": "Chemistry by Zumdahl",
+				"description": "A very good introductory book, easy-to-understand explanations, excellent practice problems, **does not** cover all fo the necessary material required.",
+				"image": "https://imgur.com/jxQM3Tw.png"
+			},
+			{
+				"title": "Chemical Principles by Atkins",
+				"description": "Very good introductory book, compact explanations, decent practice problems, much more detailed than Zumdahl.",
+				"image": "https://imgur.com/xtJ8vkk.png"
+			},
+			{
+				"title": "Organic Chemistry by Klein",
+				"description": "Very good introductory book, easy-to-understand explanations, decent practice problems, provides the fundamentals of organic chemistry knowledge.",
+				"image": "https://imgur.com/DsPdeYv.png"
+			},
+			{
+				"title": "Organic Chemistry by Clayden",
+				"description": "Very good intermediate book, outstanding explanations, outstanding practice problems, much more detailed than Klein, all you need for IChO.",
+				"image": "https://imgur.com/9Ed14h3.png"
+			}
+		]
 	}
 ]
