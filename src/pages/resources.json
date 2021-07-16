@@ -5,7 +5,7 @@
 			{
 				"title": "CODS Courses (WIP)",
 				"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We updte the courses every week and anyone can contribute to the project. Check it out!",
-				"image": "https://imgur.com/mQentbJ.png"
+				"image": "https://imgur.com/1NOksZT.png"
 			},
 			{
 				"title": "Chemguide",
@@ -90,19 +90,23 @@
 		"resources": [
 			{
 				"title": "SOCC 2020",
-				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests."
+				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests.",
+				"image": "https://imgur.com/ZVXMAbx.png"
 			},
 			{
 				"title": "SChO 2020",
-				"description": "SChO '20 was a mock IChO competition for the highest level of competitors."
+				"description": "SChO '20 was a mock IChO competition for the highest level of competitors.",
+				"image": "https://imgur.com/pMl8caH.png"
 			},
 			{
 				"title": "ACOT 2020",
-				"description": "ACOT '20 was a PVP tournament where participants had to answer questions with speed an accuracy compared to their opponent."
+				"description": "ACOT '20 was a PVP tournament where participants had to answer questions with speed an accuracy compared to their opponent.",
+				"image": "https://imgur.com/i3h9MNA.png"
 			},
 			{
 				"title": "WCC 2020",
-				"description": "WCC '20 was a mock USNCO exam that replicated its difficulty, structure, and format."
+				"description": "WCC '20 was a mock USNCO exam that replicated its difficulty, structure, and format.",
+				"image": "https://imgur.com/tFxgitM.png"
 			}
 		]
 	},
@@ -111,19 +115,23 @@
 		"resources": [
 			{
 				"title": "SOCC 2021",
-				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests."
+				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests.",
+				"image": "https://imgur.com/ZVXMAbx.png"
 			},
 			{
 				"title": "SChO 2021",
-				"description": "SChO '20 was our first competition that implemented our tier system, providing a wide range of difficulty."
+				"description": "SChO '20 was our first competition that implemented our tier system, providing a wide range of difficulty.",
+				"image": "https://imgur.com/pMl8caH.png"
 			},
 			{
 				"title": "ACOT 2021",
-				"description": "- Coming Soon -"
+				"description": "- Coming Soon -",
+				"image": "https://imgur.com/i3h9MNA.png"
 			},
 			{
 				"title": "WCC 2021",
-				"description": "- Coming Soon -"
+				"description": "- Coming Soon -",
+				"image": "https://imgur.com/tFxgitM.png"
 			}
 		]
 	}
