@@ -9,7 +9,7 @@ const SubpagesTable = function(props) {
 			groupBy(props.nodes, "relativeDirectory").sort(categorySort).map(group => {
 				return (
 					<div>
-						<h1>{group.key.replaceAll('_', ' ').replace(/[0-9] /g, '')}</h1>
+						<h1>{group.key.replace(/_/g, ' ').replace(/[0-9] /g, '')}</h1>
 						<table class="min-w-full divide-y divide-gray-200">
 							<thead>
 								<tr>
