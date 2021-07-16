@@ -27,6 +27,14 @@ const alphaSort = function (a, b) {
 	return 0
 }
 
+const numSort = function (a, b) {
+	// https://usefulangle.com/post/281/javascript-default-value-if-null-or-undefined
+	let na = a.childMdx.frontmatter.order
+	let nb = b.childMdx.frontmatter.order
+
+	return na - nb
+}
+
 export default function guides({ data }) {
 	return (
 		<Layout>
@@ -45,7 +53,7 @@ export default function guides({ data }) {
 								</thead>
 								<tbody>
 									{
-										group.values.map(node => {
+										group.values.sort(numSort).map(node => {
 											var slug = node.childMdx.slug
 											var title = node.childMdx.frontmatter.title
 											var description = node.childMdx.frontmatter.description
@@ -77,6 +85,7 @@ query {
 				frontmatter {
 					title
 					description
+					order
 				}
 			}
 			relativeDirectory
