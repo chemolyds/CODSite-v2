@@ -5,7 +5,8 @@ import Layout from '../layouts/layout'
 export default function courses() {
 	return (
 		<Layout>
-			<h1>Courses</h1> 
+			<img src="https://imgur.com/1NOksZT.png"/>
+
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 					<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
 						<Link to="Bronze">
