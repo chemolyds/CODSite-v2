@@ -17,15 +17,25 @@ const groupBy = function (xs, key) {
 	}, []);
 }
 
+// https://www.javascripttutorial.net/array/javascript-sort-an-array-of-objects/
+const alphaSort = function (a, b) {
+	let ca = a.key
+	let cb = b.key
+
+	if (ca < cb) return -1
+	if (ca > cb) return 1
+	return 0
+}
+
 export default function guides({ data }) {
 	return (
 		<Layout>
 			<StaticImage src="../images/guides.png" placeholder="blurred"/>
 			{
-				groupBy(data.allFile.nodes, "relativeDirectory").map(group => {
+				groupBy(data.allFile.nodes, "relativeDirectory").sort(alphaSort).map(group => {
 					return (
 						<div>
-							<h1>{group.key ? group.key.replace('_', ' ') : "misc"}</h1>
+							<h1>{group.key.replace('_', ' ')}</h1>
 							<table class="min-w-full divide-y divide-gray-200">
 								<thead>
 									<tr>
