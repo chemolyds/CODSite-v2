@@ -10,12 +10,14 @@
 			{
 				"title": "Chemguide",
 				"description": "Chemguide is a very good learning resource. Made by Jim Clark, its initial purpose was to provide U.K. students a place to learn about chemistry. However, this resource is extremely helpful for chemistry Olympiad participants as well, and the inorganic chemistry section in particular has been proven to be invaluable.",
-				"image": "https://imgur.com/upd9Nwt.png"
+				"image": "https://imgur.com/upd9Nwt.png",
+				"link": "https://www.chemguide.co.uk/"
 			},
 			{
 				"title": "Chemistry LibreTexts",
 				"description": "Chemistry LibreTexts can also be great help as well. Content that is present in Chemistry Olympiads that aren't taught in high school can often be learned from this website. You should check it out!",
-				"image": "https://imgur.com/F2HO00G.png"
+				"image": "https://imgur.com/F2HO00G.png",
+				"link": "https://chem.libretexts.org/"
 			}
 		]
 	},
@@ -25,12 +27,14 @@
 			{
 				"title": "Past USNCO Exams",
 				"description": "An Invaluable resource for USNCO participants. It provides all of the past USNCO exams, and some of the more recent exams have solutions attatched to them as well. We recommend you trying these out as soon as you have covered your fundamentals!",
-				"image": "https://imgur.com/wf2osaK.png"
+				"image": "https://imgur.com/wf2osaK.png",
+				"link": "https://www.acs.org/content/acs/en/education/students/highschool/olympiad/pastexams.html"
 			},
 			{
 				"title": "USNCO Quizzes",
 				"description": "Made by Andrew Ni, this resource can be useful if you would like to practice a particular topic in USNCO.",
-				"image": "https://imgur.com/QTJQmkr.png"
+				"image": "https://imgur.com/QTJQmkr.png",
+				"link": "https://usnco-quizzes.web.app/"
 			},
 			{
 				"title": "Atkin's Chemical Principles",
@@ -45,7 +49,8 @@
 			{
 				"title": "IChO Recommendations",
 				"description": "Written by a Gold IChO Medalist ('20) and CODS staff, Anugrah goes over what practice problems you should utilize to prepare for IChO.",
-				"image": "https://imgur.com/EK5Z0Wu.png"
+				"image": "https://imgur.com/EK5Z0Wu.png",
+				"link": "https://chemistry.isodn.org/guides/chemoly_guides/intermediate"
 			},
 			{
 				"title": "Past IChO Exams",
@@ -132,6 +137,35 @@
 				"title": "WCC 2021",
 				"description": "- Coming Soon -",
 				"image": "https://imgur.com/tFxgitM.png"
+			}
+		]
+	},
+	{
+		"category": "CODSNotes",
+		"resources": [
+			{
+				"title": "1"
+			},
+			{
+				"title": "2"
+			},
+			{
+				"title": "3"
+			},
+			{
+				"title": "4"
+			},
+			{
+				"title": "5"
+			},
+			{
+				"title": "6"
+			},
+			{
+				"title": "7"
+			},
+			{
+				"title": "8"
 			}
 		]
 	}
