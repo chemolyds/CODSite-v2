@@ -1,15 +1,17 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
-import Layout from '../layouts/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+
+import SEO from '../components/seo'
+import Layout from '../layouts/layout'
 import SubpagesTable from '../components/SubpagesTable'
 
 export default function guides({ data }) {
 	return (
 		<Layout>
+			<SEO title="Guides"/>
 			<StaticImage src="../images/guides.png" placeholder="blurred"/>
 			<SubpagesTable nodes={data.allFile.nodes}/>
-			
 		</Layout>
 	)
 }

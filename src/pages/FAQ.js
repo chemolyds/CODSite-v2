@@ -1,11 +1,14 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
-import Layout from '../layouts/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+
+import SEO from '../components/seo'
+import Layout from '../layouts/layout'
 
 export default function FAQ({ data }) {
 	return (
 		<Layout>
+			<SEO title="Frequently Asked Questions"/>
 			<StaticImage src="../images/FAQs.png" placeholder="blurred"/>
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				{

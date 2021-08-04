@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+
+import SEO from '../components/seo'
 import Layout from '../layouts/layout'
 
 const navigation = [
@@ -13,6 +15,7 @@ const navigation = [
 export default function competitions() {
 	return (
 		<Layout>
+			<SEO title="Competitions"/>
 			<img src="https://imgur.com/1NOksZT.png"/>
 
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
