@@ -81,7 +81,7 @@ export default function resources() {
 						<div class={`md:grid gap-5 place-items-center ${numcols(c.resources.length)}`}>
 							{c.resources.map(r => {
 									return (
-										<div class="text-center sm:mb-10">
+										<div class="text-center mb-10">
 											{r.image ? <img src={r.image} class="h-64 mb-1"/> : <></>}
 											{r.title ? <p class="font-bold mt-0 mb-1">
 												{r.link ? <Link to={r.link}>{r.title}</Link> : r.title}
