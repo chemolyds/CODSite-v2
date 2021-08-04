@@ -3,15 +3,14 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import SEO from '../components/seo'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Base from '../layouts/base'
 import '../layouts/layout.css'
 
 export default function Home() {
 	return (
-		<>
+		<Base>
 			<SEO title="Home" keywords={['Chem Competition']} />
-			<Header siteTitle="CODSite" />
+
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
 				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
 
@@ -130,8 +129,8 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<Footer/>
-		</>
+
+		</Base>
 	)
 }
 
