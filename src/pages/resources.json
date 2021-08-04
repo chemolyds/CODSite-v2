@@ -1,27 +1,5 @@
 [
 	{
-		"category": "General Resources",
-		"resources": [
-			{
-				"title": "CODS Courses (WIP)",
-				"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We updte the courses every week and anyone can contribute to the project. Check it out!",
-				"image": "https://imgur.com/1NOksZT.png"
-			},
-			{
-				"title": "Chemguide",
-				"description": "Chemguide is a very good learning resource. Made by Jim Clark, its initial purpose was to provide U.K. students a place to learn about chemistry. However, this resource is extremely helpful for chemistry Olympiad participants as well, and the inorganic chemistry section in particular has been proven to be invaluable.",
-				"image": "https://imgur.com/upd9Nwt.png",
-				"link": "https://www.chemguide.co.uk/"
-			},
-			{
-				"title": "Chemistry LibreTexts",
-				"description": "Chemistry LibreTexts can also be great help as well. Content that is present in Chemistry Olympiads that aren't taught in high school can often be learned from this website. You should check it out!",
-				"image": "https://imgur.com/F2HO00G.png",
-				"link": "https://chem.libretexts.org/"
-			}
-		]
-	},
-	{
 		"category": "Resources for U.S. Participants",
 		"resources": [
 			{
@@ -137,35 +115,6 @@
 				"title": "WCC 2021",
 				"description": "- Coming Soon -",
 				"image": "https://imgur.com/tFxgitM.png"
-			}
-		]
-	},
-	{
-		"category": "CODSNotes",
-		"resources": [
-			{
-				"title": "1"
-			},
-			{
-				"title": "2"
-			},
-			{
-				"title": "3"
-			},
-			{
-				"title": "4"
-			},
-			{
-				"title": "5"
-			},
-			{
-				"title": "6"
-			},
-			{
-				"title": "7"
-			},
-			{
-				"title": "8"
 			}
 		]
 	}
