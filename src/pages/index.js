@@ -14,7 +14,9 @@ export default function Home() {
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
 				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
 
-				<div class="bg-blue-50 px-20 py-10 mt-16">
+				<h1 class="text-center mt-16">CODSNotes available <Link to="https://drive.google.com/drive/folders/195kcNDwljvw1w5ZKVWzpE7LCdbvwQzVL?usp=sharing" class="text-blue-400">here</Link>!</h1>
+
+				<div class="bg-blue-50 px-5 md:px-20 py-10 mt-16">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
 					<h3 class="text-center font-light">Haven't joined the community yet? You can join <a class="text-blue-400" target="_blank" href="https://discord.gg/chemistry">here</a>.</h3>
 					<h3 class="font-light mt-10">Our Mission is to make Competitive Chemistry more...</h3>
@@ -45,15 +47,15 @@ export default function Home() {
 				</div>
 
 				<div style={{padding: '1.45rem 1.0875rem 1.45rem'}}>
-					<h2 class="font-medium mt-10">What is CODSite for?</h2>
-					<p>
+					<h2 class="font-medium mt-10 text-center">What is CODSite for?</h2>
+					<p class="md:px-20">
 						CODSite is an all-purpose website made for our community (competitive Chemistry enthusiasts).
 						Everything on CODSite is free to use for anybody, no sign-ups or memberhsip required.
 						We provide custom <b>open educational resources</b> such as lectures, detailed notes, useful websites, problem sets, guides, tools, and all of our past competition papers.
 						Anything a chemistry freak could dream of lies within this website.
 					</p>
 
-					<div class="text-center">
+					<div class="text-center md:px-20">
 						<h2 class="font-medium tracking-wide mt-20 mb-16">Open Educational Resources at CODSite</h2>
 						<dl class="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
 							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5 my-4">
