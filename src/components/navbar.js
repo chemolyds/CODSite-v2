@@ -62,7 +62,7 @@ const NavBar = function({ siteTitle }) {
                     {navigation.map((item) => (
 											<>
 												{item.link ? 
-													<Link class='hover:text-gray-300 m-0 py-2 px-4 font-thin' key={item.name} to={item.link}>
+													<Link className='hover:text-gray-300 m-0 py-2 px-4 font-thin rounded-md' activeClassName="bg-gray-500 text-gray-300 hover:text-gray-300" key={item.name} to={item.link}>
 														{item.name}
 													</Link>
 												:
@@ -91,7 +91,7 @@ const NavBar = function({ siteTitle }) {
 																			{item.subpages.map((item) => (
 																				<Menu.Item>
 																					{({ active }) => (
-																						<Link class={classNames(active ? 'bg-gray-600 text-gray-100' : 'text-white', 'block px-4 py-2 text-sm')} to={item.link}>
+																						<Link className='text-white block px-4 py-2 text-sm' activeClassName='bg-gray-600 text-gray-100' to={item.link}>
 																							{item.name}
 																						</Link>
 																					)}
@@ -118,7 +118,7 @@ const NavBar = function({ siteTitle }) {
               {navigation.map((item) => (
 								<>
 									{item.link ?
-										<Link class='hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium' key={item.name} to={item.link}>
+										<Link className='hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium' activeClassName="bg-gray-500 text-gray-300 hover:text-gray-300" key={item.name} to={item.link}>
 											{item.name}
 										</Link>
 									:
@@ -147,7 +147,7 @@ const NavBar = function({ siteTitle }) {
 																{item.subpages.map((item) => (
 																	<Menu.Item>
 																		{({ active }) => (
-																			<Link class={classNames(active ? 'bg-gray-600 text-gray-100' : 'text-white', 'block px-4 py-2 text-sm')} to={item.link}>
+																			<Link className='text-white block px-4 py-2 text-sm' activeClassName='bg-gray-600 text-gray-100' to={item.link}>
 																				{item.name}
 																			</Link>
 																		)}
