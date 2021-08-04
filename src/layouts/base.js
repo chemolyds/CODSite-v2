@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from '../components/header'
+//import Header from '../components/header'
+import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 import './layout.css'
 
@@ -19,7 +20,8 @@ const Base = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+				<NavBar siteTitle={data.site.siteMetadata.title}/>
+				{/*<Header siteTitle={data.site.siteMetadata.title}/>*/}
         <div style={{ margin: '0 auto', paddingTop: 0, }}>
           {children}
         </div>
