@@ -24,7 +24,7 @@ const GeneralResources = [
 	},
 	{
 		"title": "CODSNotes",
-		"description": "Notes written by Fizzest",
+		"description": "Detailed notes on competitive chemistry topics, based on Atkins Chemical Principles",
 		"image": "https://imgur.com/1NOksZT.png",
 		"link": "https://drive.google.com/drive/folders/195kcNDwljvw1w5ZKVWzpE7LCdbvwQzVL?usp=sharing",
 		"download": "https://drive.google.com/drive/folders/195kcNDwljvw1w5ZKVWzpE7LCdbvwQzVL?usp=sharing"
