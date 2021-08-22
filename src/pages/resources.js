@@ -35,9 +35,9 @@ const numcols = function (num) {
 	let three = num % 3
 	let four = num % 4
 
-	if (three != 1) {
+	if (three !== 1) {
 		return ("md:grid-cols-3")
-	} else if (four != 1) {
+	} else if (four !== 1) {
 		return ("md:grid-cols-4")
 	} else {
 		return ("md:grid-cols-3")
@@ -57,7 +57,7 @@ export default function resources() {
 				return (
 					<div class="md:grid md:grid-cols-3 gap-5 px-5 md:px-20">
 						<div>
-							{r.image ? <img src={r.image}/> : <></>}
+							{r.image ? <img src={r.image} alt=""/> : <></>}
 						</div>
 						<div class="col-span-2 mb-10">
 							{r.title ? <h1 class="font-bold mt-0 mb-1">{r.title}</h1> : <></>}
@@ -80,7 +80,7 @@ export default function resources() {
 							{c.resources.map(r => {
 									return (
 										<div class="text-center mb-10">
-											{r.image ? <img src={r.image} class="h-64 mb-1"/> : <></>}
+											{r.image ? <img src={r.image} alt="" class="h-64 mb-1"/> : <></>}
 											{r.title ? <p class="font-bold mt-0 mb-1">{r.title}</p> : <></>}
 											<p class="text-sm mb-1">{r.description}</p>
 											{r.link ? <Link class="text-blue-400 font-bold mt-0" to={r.link}>Link</Link> : <></>}

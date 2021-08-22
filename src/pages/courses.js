@@ -8,7 +8,7 @@ export default function courses() {
 	return (
 		<Layout>
 			<SEO title="Courses"/>
-			<img src="https://imgur.com/1NOksZT.png"/>
+			<img src="https://imgur.com/1NOksZT.png" alt="CODS Courses"/>
 
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
