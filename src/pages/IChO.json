@@ -1,0 +1,28 @@
+[
+	{
+		"year": 2060,
+		"problems": [
+			{
+				"name": "Chicken Chicken Chicken: Chicken Chicken",
+				"description": "By Doug Zongker",
+				"difficulty": 1,
+				"tags": ["chicken", "chicken chicken"],
+				"pdf": "https://isotropic.org/papers/chicken.pdf",
+				"sol": "https://isotropic.org/papers/chicken.pdf"
+			}
+		]
+	},
+	{
+		"year": "2021",
+		"problems": [
+			{
+				"name": "1",
+				"pdf": "https://isotropic.org/papers/chicken.pdf"
+			},
+			{
+				"name": "2",
+				"pdf": "https://isotropic.org/papers/chicken.pdf"
+			}
+		]
+	}
+]
