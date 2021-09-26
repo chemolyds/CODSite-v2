@@ -34,7 +34,8 @@ export default function IChO() {
 												<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
 													{p.description ? <p>{p.description}</p> : <></>}
 													{p.difficulty ? <p>Difficulty: {p.difficulty}</p> : <></>}
-													<a href={p.pdf} class="text-blue-400">Problem</a>
+													{p.solution ? <a href={p.solution} class="text-blue-400">Solution</a> : <></>}
+													<iframe src={p.pdf + "preview"} width="640" height="480" allow="autoplay"></iframe>
 												</Disclosure.Panel>
 											</>
 										)}

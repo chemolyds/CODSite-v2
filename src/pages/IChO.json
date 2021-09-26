@@ -1,27 +1,31 @@
 [
 	{
-		"year": 2060,
-		"problems": [
-			{
-				"name": "Chicken Chicken Chicken: Chicken Chicken",
-				"description": "By Doug Zongker",
-				"difficulty": 1,
-				"tags": ["chicken", "chicken chicken"],
-				"pdf": "https://isotropic.org/papers/chicken.pdf",
-				"sol": "https://isotropic.org/papers/chicken.pdf"
-			}
-		]
-	},
-	{
 		"year": "2021",
 		"problems": [
 			{
 				"name": "1",
-				"pdf": "https://isotropic.org/papers/chicken.pdf"
+				"tags": ["a", "b", "c"],
+				"difficulty": 5,
+				"description": "abba",
+				"pdf": "https://drive.google.com/file/d/1SHiUiIVzOpR2op6cXPq8gVovGA8sV4Lg/",
+				"solution": "https://drive.google.com/file/d/16I3HBH5FyL5Mcam0t3--5wM7ly1D6dxM/view?usp=sharing"
 			},
 			{
 				"name": "2",
-				"pdf": "https://isotropic.org/papers/chicken.pdf"
+				"pdf": "https://drive.google.com/file/d/1sFiQxydsFWGpsmQ8rHX134hhLj9e2eQb/"
+			},
+			{
+				"name": "3",
+				"pdf": "https://drive.google.com/file/d/1583I3_7QqoaFGLUMQggNf7mmcioMF8Gz/"
+			}
+		]
+	},
+	{
+		"year": "2020",
+		"problems": [
+			{
+				"name": "1",
+				"pdf": "https://drive.google.com/file/d/16TI9roNKDkRw9OANw9IQH022v2mBDF3M/"
 			}
 		]
 	}
