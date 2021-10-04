@@ -19,7 +19,7 @@ const navigation = [
 	{ name: 'Guides', link: "/guides"},
 	{ name: 'Resources', link: "/resources"},
 	{ name: 'FAQ', link: "/FAQ"},
-	{ name: 'About', link: "/About"}
+	{ name: 'About', link: "/about"}
 ]
 
 function classNames(...classes) {
