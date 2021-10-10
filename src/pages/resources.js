@@ -51,7 +51,7 @@ export default function resources() {
 			<h1 class="text-center font-medium text-6xl">Resources</h1>
 
 			<div class="bg-gray-200 pt-5 pb-1 mt-16 mb-16">
-				<h2 class="text-center">General Resources</h2>
+				<h2 class="text-center font-normal text-3xl">General Resources</h2>
 			</div>
 			{GeneralResources.map(r => {
 				return (
