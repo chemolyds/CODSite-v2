@@ -8,7 +8,7 @@ import stuff from './resources.json'
 const GeneralResources = [
 	{
 		"title": "CODS Courses (WIP)",
-		"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\n\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We update the courses every week and anyone can contribute to the project. Check it out!",
+		"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\n\nEach module provides resources, special guidance, and problems for participants to use for their learning experience. We update the courses every week and anyone can contribute to the project. Check it out!",
 		"image": "https://imgur.com/1NOksZT.png"
 	},
 	{
