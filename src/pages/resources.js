@@ -8,7 +8,7 @@ import stuff from './resources.json'
 const GeneralResources = [
 	{
 		"title": "CODS Courses (WIP)",
-		"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\n\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We updte the courses every week and anyone can contribute to the project. Check it out!",
+		"description": "We provide over 60 courses for all participants to use, from topics that are regularly covered in your classroom to Olympiad-specific topics. These courses are designed specifically for the chemistry Olympiad competitors and those who plan on competing in CODS Competitions.\n\nEach module provides resources, special guidance, and problems for participants to use for thier learning experience. We update the courses every week and anyone can contribute to the project. Check it out!",
 		"image": "https://imgur.com/1NOksZT.png"
 	},
 	{
@@ -48,9 +48,9 @@ export default function resources() {
 	return (
 		<Base>
 			<SEO title="Resources"/>
-			<h1 class="text-center">Resources</h1>
+			<h1 class="text-center font-medium text-6xl">Resources</h1>
 
-			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+			<div class="bg-gray-200 pt-5 pb-1 mt-16 mb-16">
 				<h2 class="text-center">General Resources</h2>
 			</div>
 			{GeneralResources.map(r => {
@@ -60,7 +60,7 @@ export default function resources() {
 							{r.image ? <img src={r.image} alt=""/> : <></>}
 						</div>
 						<div class="col-span-2 mb-10">
-							{r.title ? <h1 class="font-bold mt-0 mb-1">{r.title}</h1> : <></>}
+							{r.title ? <h1 class="font-bold mt-5 mb-1">{r.title}</h1> : <></>}
 							<p class="text-sm mt-2 mb-1">{r.description}</p>
 							{r.link ? <Link class="text-blue-400 font-bold mt-0" to={r.link}>Link</Link> : <></>}
 							{r.download? <Link class="text-blue-400 font-bold mt-0" to={r.download}>Download</Link> : <></>}
