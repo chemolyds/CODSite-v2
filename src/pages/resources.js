@@ -55,13 +55,13 @@ export default function resources() {
 			</div>
 			{GeneralResources.map(r => {
 				return (
-					<div class="md:grid md:grid-cols-3 gap-5 px-5 md:px-20">
+					<div class="md:grid md:grid-cols-3 gap-20 px-10 md:px-20">
 						<div>
 							{r.image ? <img src={r.image} alt=""/> : <></>}
 						</div>
 						<div class="col-span-2 mb-10">
-							{r.title ? <h1 class="font-bold mt-5 mb-1">{r.title}</h1> : <></>}
-							<p class="text-sm mt-2 mb-1">{r.description}</p>
+							{r.title ? <h1 class="font-medium mt-5 mb-2">{r.title}</h1> : <></>}
+							<p class="text-base mt-2 mb-1">{r.description}</p>
 							{r.link ? <Link class="text-blue-400 font-bold mt-0" to={r.link}>Link</Link> : <></>}
 							{r.download? <Link class="text-blue-400 font-bold mt-0" to={r.download}>Download</Link> : <></>}
 						</div>
