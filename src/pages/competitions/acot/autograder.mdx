@@ -1,0 +1,167 @@
+---
+title: ACOT Autograder
+description: For ACOT '21 and forward
+---
+
+import Autograder from "../../../components/Autograder.js";
+
+# Interactive Autograder
+
+Below is the autograder.
+When entering your answers, make sure that they are in all caps and there is a comma between each question.
+If you skipped the question, it would look like ",,".
+Do not add any spaces.
+
+Small example: "A,B,CD,,E,E,E"
+
+**Autograder is WIP and currently does not work.**
+
+<Autograder/>
+<p/>
+
+# Grading Scheme
+
+The score is based off of two variables: time and accuracy.
+The time makes up 20% of the overall score, with accuracy the other 80%.
+The formula can be written as follows:
+
+$$
+S = 0.20 \cdot f(t) + 0.80 \cdot P
+$$
+
+Where $S$ is score, $f(t)$ is points from time, and $P$ is points from the exam, all in percent.
+
+## Time
+The score in time is a piecewise function, meant to allot full points to those who use half the max time or less.
+Afterwards, it linearly decreases until it hits zero points at the max time.
+The formula is shown as follows: 
+
+$$
+f(x) = 
+\left\{
+	\begin{array}{ll}
+			1 																															& \quad t \leq \dfrac{t_{MAX}}{2} \\
+			1 + \dfrac{t - 0.5 \cdot t_{MAX}}{0.5 \cdot t_{MAX} - t_{MAX}} 	& \quad t \geq \dfrac{t_{MAX}}{2}
+	\end{array}
+\right.
+$$
+
+Where $t_{MAX}$ is the maximum time alloted for the exam.
+This ensures that "rushing" the exam will award no extra points compared to spending half the alloted time.
+
+
+## Accuracy
+
+The accuracy function is based on a Danish paper, with modifications made to allow for multiple key (correct options) questions.
+Overall, it results in a value between -1 and 4 being awarded for each question.
+To get a score, you simply add all the points together and divide by the number of questions times four.
+The function is as follows:
+
+$$
+P(k, c_a, w_a, c) = 
+\left\{
+	\begin{array}{ll}
+			0 													& \quad \textrm{if } (c_a + w_a) = k \textrm{ or } (c_a + w_a) = 0 \\ \\
+			\dfrac{P_c - P_w}{P_{tot}} 	& \quad \textrm{otherwise}
+	\end{array}
+\right.
+$$
+
+For the inputs: $k$ is total number of options, $c_a$ is number of correctly chosen answers, $w_a$ is number of wrongly chosen answers, and $c$ is number of keys (correct options).
+This function awards zero points if all or none of the options are chosen, as they are equivalent.
+If only some options are chosen, the second equation is used, where $P_c$ is the number of points awarded, $P_w$ is number of points subtracted, and $P_{tot}$ is used to scale the points.
+This will always be -1 if only wrong options are chosen, and +4 if only right options are chosen.
+Examples will be covered in a later section.
+
+The equation for $P_w$ is:
+
+$$
+P_c(k, w_a) =
+\left\{
+	\begin{array}{ll}
+			0 																									& \quad \textrm{if } w_a = 0 \\ \\
+			\dfrac{w}{k - w}\ln\left(\dfrac{k}{w}\right) 				& \quad \textrm{if } w_a \ge 0
+	\end{array}
+\right.
+$$
+
+The equation for $P_c$ is:
+
+$$
+P_c(k, c_a, c) =
+\left\{
+	\begin{array}{ll}
+			0 																	& \quad \textrm{if } c_a = 0 \\ \\
+			\ln\left(\dfrac{k}{c}\right) 				& \quad \textrm{if } c_a \ge 0 \textrm{ and } c = 1 \\ \\
+			\ln\left(\dfrac{k}{3 - c_a}\right)	& \quad \textrm{if } c_a \ge 0 \textrm{ and } c = 2
+	\end{array}
+\right.
+$$
+
+Similarly, the equation for $P_{tot}$ is:
+$$
+P_c(k, a, c) =
+\left\{
+	\begin{array}{ll}
+			0 																	& \quad \textrm{if } c_a = 0 \\ \\
+			\dfrac{c_a + w_a}{k - (c_a + wa)}\ln\left(\dfrac{c_a + w_a}{k - (c_a + wa)}\right) 				& \quad \textrm{if } c_a \ge 0 \textrm{ and } c = 1 \\ \\
+			\dfrac{3 - c_a + w_a}{k - (3 - c_a + wa)}\ln\left(\dfrac{3 - c_a + w_a}{k - (3 - c_a + wa)}\right)	& \quad \textrm{if } c_a \ge 0 \textrm{ and } c = 2
+	\end{array}
+\right.
+$$
+
+The zero removes undefined behavior of the natural log and fraction.
+The second function defines points when there is a single key.
+It was provided by the Danish paper on grading multiple choice questions.
+The third function, if present, flips the funciton by the horizontal axis.
+It follows the rule $c + 1 - c_a$ and can be extended to have more than two keys.
+However, it may not be reliable for more than two keys.
+
+# Examples
+
+## Time
+
+There's not a lot of cases to cover for this, but I will give a couple examples.
+Assume that the exam is 60 minutes long, meaning you get full credit if you turn it in within 30 minutes.
+
+ - Someone submitted the exam after a minute (somehow): 100%
+ - Someone submitted the exam in 30 minutes: 100%
+ - Someone submitted the exam in 31 minutes: 96.67%
+ - Someone submitted the exam in 59 minutes: 3.33%
+
+
+## Accuracy
+
+Accuracy is a lot more interesting.
+For all examples, assume that there are five options.
+
+First, we will cover the basic cases: none equivalent, all wrong, and all correct.
+The points awarded is capped at -1 for all wrong answers and +4 for all correct answers.
+
+ - No options were chosen: 0 points
+ - All options were chosen: 0 points
+ - 1 wrong option was chosen: -1 point
+ - 2 wrong answers were chosen: -1 point
+ - 1 correct options were chosen: +4 points
+ - 2 correct options were chosen: +4 points
+
+If both right and wrong answers are chosen, less points are awarded.
+The idea is that the student got it right, but was not as sure as an all-correct student.
+This tapers off from the maximum +4 down to 0.
+For these examples, assume that there is only one correct option:
+
+ - 1 correct and 1 wrong: +2 points
+ - 1 correct and 2 wrong: +1.3 points
+ - 1 correct and 3 wrong: +0.9 points
+
+This gets more complex if there are two correct options.
+Picking only one of the two options will award less points, then choosing both options.
+This is compounded by choosing wrong options.
+For these examples, assume there are two correct options:
+
+ - 1 correct only: +1.5 points
+ - 1 correct and 1 wrong: +0.1
+
+If both correct options are chosen and wrong options are additionally picked, it simply follows the "one correct option" examples.
+
+For an interactive view, check out the [Desmos](https://www.desmos.com/calculator/xzmzy4whuo).
