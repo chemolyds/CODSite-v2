@@ -12,7 +12,7 @@ export default function guides({ data }) {
 		<Layout>
 			<SEO title="Guides"/>
 
-			<Autograder/>
+			{/*<Autograder/>*/}
 
 			<StaticImage src="../images/guides.png" placeholder="blurred"/>
 			<SubpagesTable nodes={data.allFile.nodes}/>
