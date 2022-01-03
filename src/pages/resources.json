@@ -74,17 +74,20 @@
 			{
 				"title": "SOCC 2020",
 				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests.",
-				"image": "https://imgur.com/ZVXMAbx.png"
+				"image": "https://imgur.com/ZVXMAbx.png",
+				"link": "/competitions/socc/2020"
 			},
 			{
 				"title": "SChO 2020",
 				"description": "SChO '20 was a mock IChO competition for the highest level of competitors.",
-				"image": "https://imgur.com/pMl8caH.png"
+				"image": "https://imgur.com/pMl8caH.png",
+				"link": "/competitions/scho/2020"
 			},
 			{
 				"title": "ACOT 2020",
 				"description": "ACOT '20 was a PVP tournament where participants had to answer questions with speed an accuracy compared to their opponent.",
-				"image": "https://imgur.com/i3h9MNA.png"
+				"image": "https://imgur.com/i3h9MNA.png",
+				"link": "/competitions/acot/2020"
 			},
 			{
 				"title": "WCC 2020",
@@ -99,17 +102,20 @@
 			{
 				"title": "SOCC 2021",
 				"description": "SOCC '20 was a competition where teams of six competed in a wide variety of tests.",
-				"image": "https://imgur.com/ZVXMAbx.png"
+				"image": "https://imgur.com/ZVXMAbx.png",
+				"link": "/competitions/socc/2021"
 			},
 			{
 				"title": "SChO 2021",
 				"description": "SChO '20 was our first competition that implemented our tier system, providing a wide range of difficulty.",
-				"image": "https://imgur.com/pMl8caH.png"
+				"image": "https://imgur.com/pMl8caH.png",
+				"link": "/competitions/scho/2021"
 			},
 			{
 				"title": "ACOT 2021",
-				"description": "- Coming Soon -",
-				"image": "https://imgur.com/i3h9MNA.png"
+				"description": "ACOT '21 is a tournament that tests participants' speed and accuracy in an MCQ and FRQ fashion.",
+				"image": "https://imgur.com/i3h9MNA.png",
+				"link": "/competitions/acot/2021"
 			},
 			{
 				"title": "WCC 2021",
