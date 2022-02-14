@@ -95,17 +95,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-				gatsbyRemarkPlugins: [
-					{
-						resolve: `gatsby-remark-katex`,
-						options: {
-							strict: `ignore`,
-						},
-					},
-				],
 				remarkPlugins: [
-					require(`remark-math`),
-					require(`remark-html-katex`)
+					require("remark-math"),
+					require("remark-html-katex")
+				],
+				rehypePlugins: [
+					
 				],
         defaultLayouts: {
 					FAQ: `${__dirname}/src/layouts/FAQ.js`,
