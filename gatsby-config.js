@@ -1,7 +1,3 @@
-const path = require('path')
-const remark_math = require(`remark-math`)
-const remark_html_katex = require(`remark-html-katex`)
-
 module.exports = {
   siteMetadata: {
     title: 'CODSite',
@@ -99,20 +95,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-				gatsbyRemarkPlugins: [
-					{
-						resolve: `gatsby-remark-katex`,
-						options: {
-							strict: `ignore`,
-						},
-					},
-				],
 				remarkPlugins: [
-					remark_math, remark_html_katex
+					require("remark-math"),
+					require("remark-html-katex")
+				],
+				rehypePlugins: [
+					
 				],
         defaultLayouts: {
-					FAQ: path.resolve('./src/layouts/FAQ.js'),
-					default: path.resolve('./src/layouts/layout.js')
+					FAQ: `${__dirname}/src/layouts/FAQ.js`,
+					default: `${__dirname}/src/layouts/layout.js`
 				},
       },
     },
