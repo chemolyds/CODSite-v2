@@ -3,6 +3,9 @@
   "description": "Chem Oly Discord Server Site",
   "version": "1.0.0",
   "author": "Jeremy Tinana",
+	"engines": {
+		"node": ">=14.15.0"
+	},
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
