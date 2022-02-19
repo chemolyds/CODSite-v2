@@ -18,7 +18,7 @@ export default function Home() {
 
 				<div class="bg-blue-50 px-5 md:px-20 py-10 mt-16">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
-					<h3 class="text-center font-light">Haven't joined the community yet? You can join <Link class="text-blue-400" href="https://discord.gg/chemistry">here</Link>.</h3>
+					<h3 class="text-center font-light">Haven't joined the community yet? You can join <Link class="text-blue-400" href="https://discord.gg/chemistryolympiad">here</Link>.</h3>
 					<h3 class="font-light mt-10">Our Mission is to make Competitive Chemistry more...</h3>
 					<dl class="md:grid md:grid-cols-3">
 
