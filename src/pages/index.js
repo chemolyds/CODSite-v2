@@ -71,6 +71,7 @@ export default function Home() {
 								</Link>
 							</div>
 							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5 my-4">
+								<Link to="https://drive.google.com/drive/u/4/folders/195kcNDwljvw1w5ZKVWzpE7LCdbvwQzVL">
 								<dt>
 								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										CODSNotes
@@ -79,8 +80,10 @@ export default function Home() {
 								<dd class="text-base">
 									Made specially for the CODS community, these notes cover the fundamentals required for competitive Chemistry, from Atomic structures to Organic Chemistry.
 								</dd>
+								</Link>
 							</div>
 							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5 my-4">
+								<Link to="/guides">
 								<dt>
 								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Guides
@@ -89,8 +92,10 @@ export default function Home() {
 								<dd class="text-base">
 									Our staff is dedicated to writing guides for all levels. From introductory guides to those for the IChO level, there is a guide for anyone written by the best in the competitive chemistry scene.
 								</dd>
+								</Link>
 							</div>
 							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5 my-4">
+								<Link to="/competitions">
 								<dt>
 								<h2 class="mt-2 mb-5 font-normal tracking-wide">
 										Past Papers
@@ -99,6 +104,7 @@ export default function Home() {
 								<dd class="text-base">
 									All of our past competition papers are released to the public and can be accessed immediately. Click here to access our list of past exams.
 								</dd>
+								</Link>
 							</div>
 							<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 hover:scale-110 rounded-xl mx-5 my-4">
 								<dt>
@@ -111,7 +117,7 @@ export default function Home() {
 									<ul>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/acot">ACOT</Link></li>
-										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/wcc">WCC (CODSchO)</Link></li>
+										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/wcc">WCC</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/socc">SOCC</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="compeitions/scho">SChO</Link></li>
 									</ul>
