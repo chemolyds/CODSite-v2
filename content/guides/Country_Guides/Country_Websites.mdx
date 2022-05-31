@@ -1,0 +1,37 @@
+---
+title: Chemistry Olympiad Websites
+description: Table of Website Links
+order: 1
+---
+
+import {Link} from 'gatsby'
+
+<table>
+	{
+		[
+			// Flag, Link, Name
+			["https://i.imgur.com/Lw5CgYu.jpg", "https://www.oecho.at/de/", "Denmark"],
+			["https://i.imgur.com/aVY3Icz.jpg", "http://www1.chemsoc.org.cn/", "China"],
+			["https://i.imgur.com/CWhtOQY.jpg", "https://olympiada.vscht.cz/cs/"],
+			["https://i.imgur.com/K5uq50y.jpg", "http://olimpia.chem.elte.hu/"],
+			["https://i.imgur.com/RTo92Ng.png", "https://chem.hbcse.tifr.res.in/in-india/", "India"],
+			["https://i.imgur.com/iguxVSb.png", "https://gp.csj.jp/next/", "Japan"],
+			["https://i.imgur.com/QW3o4GM.jpg", "https://chemolympiad.kcsnet.or.kr/", "Korea"],
+			["https://i.imgur.com/3iV2jtw.png", "https://www.olchem.edu.pl/"],
+			["https://i.imgur.com/T1amxsU.jpg", "https://www.isj.tm.edu.ro/specializari/chimie/olimpiade-si-concursuri-scolare-disciplina-chimie"],
+			["https://i.imgur.com/RGtpsGq.jpg", "http://chemspb.3dn.ru/"],
+			["https://i.imgur.com/VjcACjD.jpg", "https://chemistry.nus.edu.sg/outreach/community-outreach/cho/"],
+			["https://i.imgur.com/RNZIlaW.jpg", "https://www.posn.or.th/"],
+			["https://i.imgur.com/CqEj58E.jpg", "https://sites.google.com/view/olimpiada-z-khimii-21-22/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0-%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0"],
+			["https://i.imgur.com/q0dLdG9.jpg", "https://edu.rsc.org/enrichment/uk-chemistry-olympiad", "UK"],
+			["https://i.imgur.com/tWeYKx5.jpg", "https://www.acs.org/content/acs/en/education/students/highschool/olympiad.html", "USA"],
+		].map(country => {
+			return (
+				<tr>
+					<td><img src={country[0]} class="h-64"/></td>
+					<td><Link to={country[1]} class="text-blue-400">{country[2] ? `Link for ${country[2]}` : "Website Link"}</Link></td>
+				</tr>
+			)
+		})
+	}
+</table>
