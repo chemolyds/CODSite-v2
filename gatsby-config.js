@@ -95,6 +95,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+				JSFrontmatterEngine: true,
 				remarkPlugins: [
 					require("remark-math"),
 					require("remark-html-katex")
