@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { graphql } from "gatsby"
 
 import SEO from '../components/seo'
 import Base from '../layouts/base'
@@ -44,7 +45,7 @@ const numcols = function (num) {
 	}
 }
 
-export default function resources() {
+export default function resources({ data }) {
 	return (
 		<Base>
 			<SEO title="Resources"/>
@@ -92,6 +93,50 @@ export default function resources() {
 					</div>
 				)
 			})}
+
+			{
+				data.allFile.group.map(group => { 
+					//console.log(group)
+					return (
+						<div>
+							<h2>Competition: {group.edges[0].node.sourceInstanceName}</h2>
+							<ul>
+								{
+									group.edges.map(edges => {
+										let node = edges.node
+										console.log(node)
+										return (
+											<li>
+												<Link to={`/competitions/${node.sourceInstanceName}/${node.childMdx.slug}`} class="text-blue-400">{node.childMdx.frontmatter.title}</Link>
+											</li>
+										)
+									})
+								}
+							</ul>
+						</div>
+					)
+				})
+			}
 		</Base>
 	)
 }
+
+export const query = graphql`
+  {
+    allFile(filter: {absolutePath: {regex: "/competitions//"}}) {
+      group(field: sourceInstanceName) {
+        edges {
+          node {
+            childMdx {
+              slug
+              frontmatter {
+                title
+              }
+            }
+            sourceInstanceName
+          }
+        }
+      }
+    }
+  }
+`
