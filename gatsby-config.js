@@ -109,6 +109,17 @@ module.exports = {
 				},
       },
     },
+		/* mongoDB */
+		{
+			resolve: `gatsby-source-mongodb`,
+			options: {
+				connectionString: `mongodb+srv://${process.env.mongoDBuser}:${process.env.mongoDBpass}@${process.env.mongoDBurl}`,
+				dbName: 'CODS-DB',
+				extraParams: {
+					retryWrites: true,
+				}
+			},
+		},
 		/* something something idk */
     {
       resolve: `gatsby-plugin-manifest`,
