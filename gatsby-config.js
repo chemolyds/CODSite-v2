@@ -1,3 +1,5 @@
+const tokens = require('./tokens.json');
+
 module.exports = {
   siteMetadata: {
     title: 'CODSite',
@@ -85,6 +87,29 @@ module.exports = {
 				name: `FAQ`,
 			},
 		},
+			/* mongoDB */
+			{
+				resolve: `gatsby-source-mongodb`,
+				options: {
+					//connectionString: `mongodb://${tokens.mongoDB.user}:${tokens.mongoDB.pass}@${tokens.mongoDB.url}:27017?retryWrites=true&w=majority`,
+					server: { 
+						address: tokens.mongoDB.url,
+						port: 27017,
+					},
+					auth: { 
+						user: tokens.mongoDB.user,
+						password: tokens.mongoDB.pass,
+					},
+					dbName: 'cods-db',
+					collection: [ 'diplomas' ],
+					extraParams: {
+						replicaSet: 'cods-db-shard-00-02',
+						ssl: true,
+						authSource: 'admin',
+						retryWrites: true,
+					},
+				},
+			},
 		/* MDX setup */
 		{
 			resolve: "gatsby-plugin-page-creator",
@@ -109,17 +134,6 @@ module.exports = {
 				},
       },
     },
-		/* mongoDB */
-		{
-			resolve: `gatsby-source-mongodb`,
-			options: {
-				connectionString: `mongodb+srv://${process.env.mongoDBuser}:${process.env.mongoDBpass}@${process.env.mongoDBurl}`,
-				dbName: 'CODS-DB',
-				extraParams: {
-					retryWrites: true,
-				}
-			},
-		},
 		/* something something idk */
     {
       resolve: `gatsby-plugin-manifest`,

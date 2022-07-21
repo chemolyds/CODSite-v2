@@ -10,7 +10,7 @@ export default function diploma({ data }) {
 	)
 }
 
-export const query = graphql`
+/*export const query = graphql`
 query {
 	allMongodbCloudDocuments {
 		edges {
@@ -22,4 +22,4 @@ query {
 		}
 	}
 }
-`
+`*/
