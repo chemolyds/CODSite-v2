@@ -46,13 +46,15 @@ const numcols = function (num) {
 }
 
 export default function resources({ data }) {
+	const compYears = groupByYear(data.allFile.edges);
+
 	return (
 		<Base>
 			<SEO title="Resources"/>
 			<h1 class="text-center font-medium text-6xl">Resources</h1>
 
-			<div class="bg-gray-200 pt-5 pb-1 mt-16 mb-16">
-				<h2 class="text-center font-normal text-3xl">General Resources</h2>
+			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+				<h2 class="text-center">General Resources</h2>
 			</div>
 			{GeneralResources.map(r => {
 				return (
@@ -94,49 +96,79 @@ export default function resources({ data }) {
 				)
 			})}
 
-			{
-				data.allFile.group.map(group => { 
-					//console.log(group)
-					return (
-						<div>
-							<h2>Competition: {group.edges[0].node.sourceInstanceName}</h2>
-							<ul>
-								{
-									group.edges.map(edges => {
-										let node = edges.node
-										console.log(node)
-										return (
-											<li>
-												<Link to={`/competitions/${node.sourceInstanceName}/${node.childMdx.slug}`} class="text-blue-400">{node.childMdx.frontmatter.title}</Link>
-											</li>
-										)
-									})
-								}
-							</ul>
-						</div>
-					)
-				})
-			}
+			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+				<h2 class="text-center">Past CODS Competitions</h2>
+			</div>
+			<div class="gap-20 px-10 md:px-20">
+				<table>
+					<tr>
+						<th>Year</th>
+						<th>ACOT</th>
+						<th>WCC</th>
+						<th>SOCC</th>
+						<th>SChO</th>
+					</tr>
+					{
+						Object.values(compYears).map(year => {
+							// if its not a year, its not a number.
+							if (isNaN(year[0].node.childMdx.slug)) {
+								return <></>
+							} // else
+							return (
+								<tr>
+									<th>{year[0].node.childMdx.slug}</th>
+									<td>{retLink(year, "ACOT")}</td>
+									<td>{retLink(year, "WCC")}</td>
+									<td>{retLink(year, "SOCC")}</td>
+									<td>{retLink(year, "SChO")}</td>
+								</tr>
+							)
+						})
+					}
+				</table>
+			</div>
+
 		</Base>
 	)
+}
+
+function retLink(objectArray, sourceInstanceName) {
+	const obj = objectArray.find(obj => obj.node.sourceInstanceName == sourceInstanceName)
+	if (!obj) {
+		return <Link>TBA</Link>
+	} else {
+		console.log(obj)
+		return <Link class="text-blue-400" to={`/competitions/${obj.node.sourceInstanceName.toLowerCase()}/${obj.node.childMdx.slug}`}>Link</Link>
+	}
+}
+
+//https://www.tutorialspoint.com/most-efficient-method-to-groupby-on-an-array-of-objects-in-javascript
+function groupByYear(objectArray) {
+	return objectArray.reduce((acc, obj) => {
+		const key = obj.node.childMdx.slug;
+		if (!acc[key]) {
+			acc[key] = [];
+		}
+		// add object to list for given key's value
+		acc[key].push(obj);
+		return acc;
+	}, {})
 }
 
 export const query = graphql`
   {
     allFile(filter: {absolutePath: {regex: "/competitions//"}}) {
-      group(field: sourceInstanceName) {
-        edges {
-          node {
-            childMdx {
-              slug
-              frontmatter {
-                title
-              }
-            }
-            sourceInstanceName
-          }
-        }
-      }
+			edges {
+				node {
+					childMdx {
+						slug
+						frontmatter {
+							title
+						}
+					}
+					sourceInstanceName
+				}
+			}
     }
   }
 `
