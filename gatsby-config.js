@@ -91,19 +91,10 @@ module.exports = {
 			{
 				resolve: `gatsby-source-mongodb`,
 				options: {
-					//connectionString: `mongodb://${tokens.mongoDB.user}:${tokens.mongoDB.pass}@${tokens.mongoDB.url}:27017?retryWrites=true&w=majority`,
-					server: { 
-						address: tokens.mongoDB.url,
-						port: 27017,
-					},
-					auth: { 
-						user: tokens.mongoDB.user,
-						password: tokens.mongoDB.pass,
-					},
-					dbName: 'cods-db',
-					collection: [ 'diplomas' ],
+					connectionString: tokens.mongoDB,
+					dbName: 'CODS-DB',
+					collection: 'diplomas',
 					extraParams: {
-						replicaSet: 'cods-db-shard-00-02',
 						ssl: true,
 						authSource: 'admin',
 						retryWrites: true,
