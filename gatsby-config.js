@@ -85,6 +85,13 @@ module.exports = {
 				name: `FAQ`,
 			},
 		},
+		{
+			resolve: 'gatsby-source-google-spreadsheets',
+			options: {
+				spreadsheetId: '1ps4XIdwJGIEhmiSOQ-4US781NZlBlMZIr8WEAfR9KK4',
+				credentials: require('./gapi-token.json')
+			},
+		},
 		/* MDX setup */
 		{
 			resolve: "gatsby-plugin-page-creator",
