@@ -21,7 +21,7 @@
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-source-google-spreadsheets": "^3.0.8",
-    "gatsby-transformer-sharp": "^4.7.0",
+    "gatsby-transformer-sharp": "^4.21.0",
     "katex": "^0.15.2",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
