@@ -114,7 +114,7 @@ export default function Home() {
 								</dt>
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
-									<ul>
+									<ul class="ml-0 pl-0">
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/acot">ACOT</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/wcc">WCC</Link></li>
