@@ -1,3 +1,5 @@
+const tokens = require('./tokens.json');
+
 module.exports = {
   siteMetadata: {
     title: 'CODSite',
@@ -85,6 +87,13 @@ module.exports = {
 				name: `FAQ`,
 			},
 		},
+		{
+			resolve: 'gatsby-source-google-spreadsheets',
+			options: {
+				spreadsheetId: '1ps4XIdwJGIEhmiSOQ-4US781NZlBlMZIr8WEAfR9KK4',
+				credentials: require('./gapi-token.json')
+			},
+		},
 		/* MDX setup */
 		{
 			resolve: "gatsby-plugin-page-creator",
@@ -109,6 +118,33 @@ module.exports = {
 				},
       },
     },
+		/* Google Analytics */
+		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [
+					tokens.google_analytics,
+					//tokens.google_analytics, // Google Analytics / GA
+				],
+				gtagConfig: {
+					// Google Optimize for A/B testing
+					// optimize_id: "OPT_CONTAINER_ID",
+					anonymize_ip: true,
+					cookie_expires: 0,
+				},
+				// This object is used for configuration specific to this plugin
+				pluginConfig: {
+					// Puts tracking script in the head instead of the body
+					head: false,
+					// Respects "Do Not Track"
+					respectDNT: true,
+					// Avoids sending pageview hits from custom paths
+					// exclude: ["/whatever"],
+					// Defaults to https://www.googletagmanager.com
+					// origin: "YOUR_SELF_HOSTED_ORIGIN",
+				}
+			},
+		},
 		/* something something idk */
     {
       resolve: `gatsby-plugin-manifest`,

@@ -67,4 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Personal tokens
 tokens.json
+gapi-token.json 
+gapi-token.json
