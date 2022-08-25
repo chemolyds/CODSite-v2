@@ -1,5 +1,4 @@
 require('dotenv').config();
-const tokens = require('./tokens.json');
 
 module.exports = {
   siteMetadata: {
