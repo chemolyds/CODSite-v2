@@ -1,3 +1,4 @@
+require('dotenv').config();
 const tokens = require('./tokens.json');
 
 module.exports = {
@@ -123,8 +124,9 @@ module.exports = {
 			resolve: `gatsby-plugin-google-gtag`,
 			options: {
 				trackingIds: [
-					tokens.google_analytics,
-					//tokens.google_analytics, // Google Analytics / GA
+					process.env.GOOGLE_ANALYTICS
+					//tokens.google_analytics,
+					// Google Analytics / GA
 				],
 				gtagConfig: {
 					// Google Optimize for A/B testing
