@@ -1,4 +1,5 @@
 require('dotenv').config();
+//console.log(process.env.GAPI_PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'))
 
 module.exports = {
   siteMetadata: {
@@ -87,7 +88,7 @@ module.exports = {
 				name: `FAQ`,
 			},
 		},
-		{
+		/*{
 			resolve: 'gatsby-source-google-spreadsheets',
 			options: {
 				spreadsheetId: '1ps4XIdwJGIEhmiSOQ-4US781NZlBlMZIr8WEAfR9KK4',
@@ -95,7 +96,7 @@ module.exports = {
 					type: 'service_account',
 					project_id: process.env.GAPI_PROJECT_ID,
 					private_key_id: process.env.GAPI_PRIVATE_KEY_ID,
-					private_key: process.env.GAPI_PRIVATE_KEY,//.replace(/(\\r)|(\\n)/g, '\n'),
+					private_key: process.env.GAPI_PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
 					client_email: process.env.GAPI_CLIENT_EMAIL,
 					client_id: process.env.GAPI_client_id,
 					auth_uri: 'https://accounts.google.com/o/oauth2/auth',
@@ -104,7 +105,7 @@ module.exports = {
 					client_x509_cert_url: process.env.GAPI_CLIENT_X509_CERT_URL,
 				},
 			},
-		},
+		},*/
 		/* MDX setup */
 		{
 			resolve: "gatsby-plugin-page-creator",
