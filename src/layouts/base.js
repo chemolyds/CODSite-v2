@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 //import Header from '../components/header'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
+import GtagBanner from '../components/gtagBanner'
 import './layout.css'
 
 const Base = ({ children }) => (
@@ -21,10 +22,12 @@ const Base = ({ children }) => (
     render={data => (
       <>
 				<NavBar siteTitle={data.site.siteMetadata.title}/>
+
 				{/*<Header siteTitle={data.site.siteMetadata.title}/>*/}
         <div style={{ margin: '0 auto', paddingTop: 0, }}>
           {children}
         </div>
+				<GtagBanner/>				
 				<Footer/>
       </>
     )}

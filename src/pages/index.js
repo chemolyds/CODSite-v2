@@ -12,7 +12,7 @@ export default function Home() {
 			<SEO title="Home" keywords={['Chem Competition']} />
 
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
-				<center><StaticImage src="../images/welcome.png" placeholder="blurred"/></center>
+				<center><StaticImage src="../images/banners/welcome.png" placeholder="blurred"/></center>
 
 				<h1 class="text-center mt-16">CODSNotes available <Link to="https://drive.google.com/drive/folders/195kcNDwljvw1w5ZKVWzpE7LCdbvwQzVL?usp=sharing" class="text-blue-400">here</Link>!</h1>
 
@@ -114,7 +114,7 @@ export default function Home() {
 								</dt>
 								<dd class="text-base">
 									We provide four annual chemistry competitions for anyone to participate. For more information:
-									<ul>
+									<ul class="ml-0 pl-0">
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/competitors_guide">Competitor's Guide</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/acot">ACOT</Link></li>
 										<li class="text-blue-400 mt-2" style={{"listStyle": "none"}}><Link to="competitions/wcc">WCC</Link></li>

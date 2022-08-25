@@ -16,7 +16,7 @@ export default function competitions() {
 	return (
 		<Layout>
 			<SEO title="Competitions"/>
-			<img src="https://imgur.com/1NOksZT.png" alt="CODS Competitions"/>
+			<img src="../images/banners/competitions.png" alt="CODS Competitions"/>
 
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				{navigation.map((item) => (

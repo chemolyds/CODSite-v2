@@ -54,6 +54,38 @@ export default function resources({ data }) {
 			<h1 class="text-center font-medium text-6xl">Resources</h1>
 
 			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
+				<h2 class="text-center">Past CODS Competitions</h2>
+			</div>
+			<div class="gap-20 px-10 md:px-20">
+				<table>
+					<tr>
+						<th>Year</th>
+						<th>ACOT</th>
+						<th>WCC</th>
+						<th>SOCC</th>
+						<th>SChO</th>
+					</tr>
+					{
+						Object.values(compYears).map(year => {
+							// if its not a year, its not a number.
+							if (isNaN(year[0].node.childMdx.slug)) {
+								return <></>
+							} // else
+							return (
+								<tr>
+									<th>{year[0].node.childMdx.slug}</th>
+									<td>{retLink(year, "ACOT")}</td>
+									<td>{retLink(year, "WCC")}</td>
+									<td>{retLink(year, "SOCC")}</td>
+									<td>{retLink(year, "SChO")}</td>
+								</tr>
+							)
+						})
+					}
+				</table>
+			</div>
+
+			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
 				<h2 class="text-center">General Resources</h2>
 			</div>
 			{GeneralResources.map(r => {
@@ -95,38 +127,6 @@ export default function resources({ data }) {
 					</div>
 				)
 			})}
-
-			<div class="bg-gray-200 pt-5 pb-1 mt-10 mb-5">
-				<h2 class="text-center">Past CODS Competitions</h2>
-			</div>
-			<div class="gap-20 px-10 md:px-20">
-				<table>
-					<tr>
-						<th>Year</th>
-						<th>ACOT</th>
-						<th>WCC</th>
-						<th>SOCC</th>
-						<th>SChO</th>
-					</tr>
-					{
-						Object.values(compYears).map(year => {
-							// if its not a year, its not a number.
-							if (isNaN(year[0].node.childMdx.slug)) {
-								return <></>
-							} // else
-							return (
-								<tr>
-									<th>{year[0].node.childMdx.slug}</th>
-									<td>{retLink(year, "ACOT")}</td>
-									<td>{retLink(year, "WCC")}</td>
-									<td>{retLink(year, "SOCC")}</td>
-									<td>{retLink(year, "SChO")}</td>
-								</tr>
-							)
-						})
-					}
-				</table>
-			</div>
 
 		</Base>
 	)

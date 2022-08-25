@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function acot({ data }) {
 	return (
 		<Layout>
-			<StaticImage src="https://i.imgur.com/zeOeWag.png" placeholder="blurred"/>
+			<StaticImage src="../../images/banners/socc.png" placeholder="blurred"/>
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 				{
 					data.allFile.nodes.filter(node => node.childMdx).map(node => { return (

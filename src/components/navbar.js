@@ -49,10 +49,10 @@ const NavBar = function({ siteTitle }) {
                 {/* Logo */}
 								<div class="flex-shrink-0 flex items-center">
 									<Link to="/">
-										<StaticImage class="block lg:hidden w-auto" src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="tracedSVG"/>
+										<StaticImage class="block lg:hidden w-auto" src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="none"/>
 									</Link>
 									<Link to="/">
-										<StaticImage class="hidden lg:block w-auto" src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="tracedSVG"/>
+										<StaticImage class="hidden lg:block w-auto" src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="none"/>
 									</Link>
                 </div>
 
