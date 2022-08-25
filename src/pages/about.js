@@ -51,9 +51,9 @@ export default function about() {
 			name: 'Kwanwoo Park (fizzest#0001), USA',
 			img: kwanwooImg,
 			bio:	[
-
+				`I'm a mysterious person`
 			],
-			sectors: '',
+			sectors: 'Organizational Head',
 		},
 		{
 			name: 'Nicolai Bogø Stabell (Stabell#6680), Denmark',
