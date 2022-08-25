@@ -14,7 +14,7 @@ export default function guides({ data }) {
 
 			{/*<Autograder/>*/}
 
-			<StaticImage src="../images/guides.png" placeholder="blurred"/>
+			<StaticImage src="../images/banners/guides.png" placeholder="blurred"/>
 			<SubpagesTable nodes={data.allFile.nodes}/>
 		</Layout>
 	)

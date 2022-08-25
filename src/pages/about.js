@@ -81,7 +81,7 @@ export default function about() {
 	return (
 		<Layout>
 			<SEO title="about" />
-			<StaticImage src="../images/about.png" placeholder="blurred"/>
+			<StaticImage src="../images/banners/about.png" placeholder="blurred"/>
 
 			<h1>Staff and Contacts</h1>
 			<hr/>
