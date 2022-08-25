@@ -72,3 +72,6 @@ yarn-error.log
 tokens.json
 gapi-token.json 
 gapi-token.json
+
+# Local Netlify folder
+.netlify
