@@ -2,14 +2,23 @@ import React, { useState, useEffect } from 'react'
 import { SpeakerphoneIcon, XIcon } from '@heroicons/react/outline'
 
 export default function GtagBanner() {
-	const [seenGtagNotification, setSeenGtagNotification] = useState(window.localStorage.getItem('seenGtagNotification'));
-	const bannerRef = React.useRef();
+	const [seenGtagNotification, setSeenGtagNotification] = useState(false);
+	//const bannerRef = React.useRef();
 	//const [showGtagNotification, setShowGtagNotification] = useState(false);
 
 	useEffect(() => {
-		if (seenGtagNotification != 'true') {
+		// check to see if window is defined
+		let seen = false;
+		if(typeof window !== "undefined") {
+			seen = window.localStorage.getItem('seenGtagNotification')
+		}
+
+		// update useState based off of the information
+		if (seen != 'true') {
 			//setShowGtagNotification(true)
 			setSeenGtagNotification(false)
+		} else {
+			setSeenGtagNotification(true);
 		}
 	}, []);
 
