@@ -11,6 +11,7 @@
     "@heroicons/react": "^1.0.1",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "append-field": "^2.0.0",
     "dotenv": "^16.0.1",
     "gatsby": "^4.24.1",
     "gatsby-plugin-google-gtag": "^4.20.0",
@@ -32,7 +33,9 @@
     "remark-html-katex": "^3.0.0",
     "remark-math": "^3.0.1",
     "remark-rehype": "^10.1.0",
-    "typeface-raleway": "^1.1.13"
+    "stack-trace": "^1.0.0-pre1",
+    "typeface-raleway": "^1.1.13",
+    "utila": "^0.5.0-dev.1"
   },
   "keywords": [
     "gatsby"
