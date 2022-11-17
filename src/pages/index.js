@@ -7,6 +7,21 @@ import Base from '../layouts/base'
 import '../layouts/layout.css'
 
 export default function Home({ data }) {
+	const mission = [
+		{
+			header: "Competitive",
+			description: "by leveling out the playing field of competitive chemistry, we hope to increase the standards of Chemistry Olympiads.",
+		},
+		{
+			header: "Accessible",
+			description: "to a wider audience. We run four annual competitions for anyone around the world to compete in and provide guides for anyone to get started.",
+		},
+		{
+			header: "Fair",
+			description: "for everyone by providing guides for all levels of participants. We also provide high quality custom study resources to asssist your journey.",
+		}
+	];
+
 	return (
 		<Base>
 			<SEO title="Home" keywords={['Chem Competition']} />
@@ -89,28 +104,16 @@ export default function Home({ data }) {
 				<div class="bg-blue-100 px-5 md:px-20 py-10">
 					<h3 class="font-light">Our Mission is to make Competitive Chemistry more...</h3>
 					<dl class="md:grid md:grid-cols-3">
-
-						<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl rounded-md mx-5 my-4 transform hover:-translate-y-1 hover:scale-110">
- 							 <div>
-    							<h2 class="text-gray-800 text-3xl font-medium mb-3">Competitive</h2>
-								<p class="mt-2 text-gray-700 text-lg">by leveling out the playing field of competitive chemistry, we hope to increase the standards of Chemistry Olympiads</p>
-							</div>
-						</div>
-
-						<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl rounded-md mx-5 my-4 transform hover:-translate-y-1 hover:scale-110">
- 							 <div>
-    							<h2 class="text-gray-800 text-3xl font-medium mb-3">Accessible</h2>
-								<p class="mt-2 text-gray-700 text-lg">to a wider audience. We run four annual competitions for anyone around the world to compete in and provide guides for anyone to get started.</p>
-							</div>
-						</div>
-
-						<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl rounded-md mx-5 my-4 transform hover:-translate-y-1 hover:scale-110">
- 							 <div>
-    							<h2 class="text-gray-800 text-3xl font-medium mb-3">Fair</h2>
-								<p class="mt-2 text-gray-700 text-lg">for everyone by providing guides for all levels of participants. We also provide high quality custom study resources to asssist your journey.</p>
-							</div>
-						</div>
-
+						{
+							mission.map(cell => { return (
+								<div class="transition duration-300 ease-in-out max-w-md py-4 px-5 bg-white hover:shadow-2xl rounded-md mx-5 my-4 transform hover:-translate-y-1 hover:scale-110">
+									<div>
+											<h2 class="text-gray-800 text-3xl font-medium mb-3">{cell.header}</h2>
+										<p class="mt-2 text-gray-700 text-lg">{cell.description}</p>
+									</div>
+								</div>
+							)})
+						}
 					</dl>
 				</div>
 
