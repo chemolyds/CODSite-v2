@@ -88,6 +88,14 @@ module.exports = {
 				name: `FAQ`,
 			},
 		},
+		{
+			resolve: `gatsby-source-youtube-v3`,
+			options: {
+				channelId: 'UCyO5Wn2qKDRYWC-F5EfN2kA',
+				apiKey: process.env.YOUTUBE_API_V3,
+				maxVideos: 3,
+			},
+		},
 		/*{
 			resolve: 'gatsby-source-google-spreadsheets',
 			options: {
