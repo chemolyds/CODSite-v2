@@ -29,7 +29,7 @@ export default function Home({ data }) {
 			<div style={{margin: '0 auto',	paddingTop: 0}}>
 				<center><StaticImage src="../images/banners/welcome.png" placeholder="blurred"/></center>
 
-				<div style={{padding: '1.45rem 1.0875rem 1.45rem'}} class="mt-16 text-center bg-purple-100">
+				{/*<div style={{padding: '1.45rem 1.0875rem 1.45rem'}} class="mt-16 text-center bg-purple-100">
 					<h1 class="text-center mb-0">Latest News</h1>
 					<dl class="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 text-center">
 
@@ -93,7 +93,7 @@ export default function Home({ data }) {
 						</div>
 
 					</dl>
-				</div>
+				</div> */}
 
 				<div class="px-5 md:px-20 pt-10 pb-5">
 					<h2 class="text-center font-normal">CODS is a global community made for Chemistry Olympiad participants</h2>
