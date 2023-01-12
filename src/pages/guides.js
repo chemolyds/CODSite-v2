@@ -5,7 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import SEO from '../components/seo'
 import Layout from '../layouts/layout'
 import SubpagesTable from '../components/SubpagesTable'
-import Autograder from '../components/autograder'
 
 export default function guides({ data }) {
 	return (
