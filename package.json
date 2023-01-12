@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "author": "Jeremy Tinana",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=16.13.0",
+		"npm": ">=8.16.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.2.0",
