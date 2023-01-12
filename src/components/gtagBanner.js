@@ -14,7 +14,7 @@ export default function GtagBanner() {
 		}
 
 		// update useState based off of the information
-		if (seen != 'true') {
+		if (seen !== 'true') {
 			//setShowGtagNotification(true)
 			setSeenGtagNotification(false)
 		} else {

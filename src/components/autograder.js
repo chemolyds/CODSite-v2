@@ -126,7 +126,7 @@ const Autograder = function(props) {
 	function GradeAnswers()
 	{
 		let answerUsr = answers.split(',');
-		if (answerUsr.length != 20)
+		if (answerUsr.length !== 20)
 		{
 			setOpenError(true);
 			return;
@@ -162,7 +162,7 @@ export function CalcScore(k, ca, wa, c) {
 	var a = ca + wa;
 	// check if they didn't answer or they chose everything
 	// not worth any points
-	if (a == 0  || k == a) {
+	if (a === 0  || k === a) {
 		return 0;
 	} 
 
