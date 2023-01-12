@@ -25,10 +25,10 @@ export default function acot({ data }) {
 					)})
 				}
 				<div class="max-w-md py-4 px-5 bg-white hover:bg-blue-100 shadow-2xl rounded-md mx-5">
-					<Link to={"autograder"}>
+					<Link to={"grading"}>
 					<dt>
 						<p class="mb-2 text-lg leading-5 front-medium text-gray-900">
-							ACOT Autograder
+							ACOT Grading System
 						</p>
 					</dt>
 					<dd class="text-base text-gray-500">
