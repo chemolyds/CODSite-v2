@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/solid'
 // https://www.npmjs.com/package/react-pdf
@@ -35,7 +35,7 @@ export default function IChO() {
 													{p.description ? <p>{p.description}</p> : <></>}
 													{p.difficulty ? <p>Difficulty: {p.difficulty}</p> : <></>}
 													{p.solution ? <a href={p.solution} class="text-blue-400">Solution</a> : <></>}
-													<iframe src={p.pdf + "preview"} width="640" height="480" allow="autoplay"></iframe>
+													<iframe title={`${p.name} pdf`} src={p.pdf + "preview"} width="640" height="480" allow="autoplay"></iframe>
 												</Disclosure.Panel>
 											</>
 										)}
