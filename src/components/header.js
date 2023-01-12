@@ -24,7 +24,7 @@ const Header = function({ siteTitle }) {
     <div class="lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2 mr-auto">
       <h1 id="test-id" class="m-0 hover:text-blue-200 font-light tracking-wider">
         <Link to="/">
-          <StaticImage src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="tracedSVG"/>
+          <StaticImage src='../images/cods_logo_white.png' height={50} alt={siteTitle} placeholder="none"/>
         </Link>
       </h1>
 
