@@ -94,7 +94,7 @@ export default function about() {
 						<div class="mb-3 pb-3">
 							<h3 class="mb-2">{staff.name}</h3>
 							<div class="md:grid md:grid-cols-3 md:gap-4 mt-2">
-								<div><img src={staff.img} placeholder="blurred"/></div>
+								<div><img src={staff.img} placeholder="blurred" alt={staff.name}/></div>
 								<div class="md:col-span-2">
 									<p>{staff.bio}</p>
 									<p><b>CODS Sectors:</b> {staff.sectors}</p>
