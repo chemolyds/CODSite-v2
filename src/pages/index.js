@@ -215,7 +215,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 	query {
-		allYoutubeVideo(sort: {order: DESC, fields: publishedAt}) {
+		allYoutubeVideo(sort: {publishedAt: DESC}) {
 			nodes {
 				title
 				videoId
