@@ -32,7 +32,7 @@
     "react-helmet": "^6.1.0",
     "react-pdf": "^6.2.1",
     "rehype-katex": "^6.0.2",
-    "remark-html-katex": "^3.0.0",
+    "remark-html-katex": "^4.0.1",
     "remark-math": "^3.0.1",
     "remark-rehype": "^10.1.0",
     "stack-trace": "^1.0.0-pre1",
