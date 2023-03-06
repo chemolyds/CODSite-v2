@@ -73,7 +73,7 @@ export default function about() {
 
 			<h2>Competitions Writers</h2>
 			<ul>
-				{writers.map(writer => 
+				{writers.sort().map(writer => 
 					<li>{writer}</li>	
 				)}
 			</ul>
@@ -104,18 +104,28 @@ export default function about() {
 }
 
 const writers = [
-	'Ihor Kholomieiev',
-	'bluepianist#929',
-	'Lasse Johnson',
-	'Lin Bigom-Eriksen',
 	'Anathan Sadagopan',
-	'Ron Shprints',
-	'Qiyang Zhao',
+	'bluepianist#9293',
+	'Ihor Kholomieiev',
+	'Lasse Johnson',
+	'Lim Dillion',
+	'Lin Bigom-Eriksen',
 	'Nick Ouyang',
 	'Nick Tsao',
+	'Qiyang Zhao',
+	'Ron Shprints',
 	'Thomas Falkenberg',
-	'Tomasz Ślusarczyk'
-]
+	'Tomasz Ślusarczyk',
+	'Tristan Chau',
+	'Yiwei Liang',
+	'lof#4839',
+	'Jeremy Tinana',
+	'Nipun Dour',
+	'Nishaant Jacobus',
+	'Erick Wu',
+	'Ray Zhou',
+	'Matthionine#9769',
+];
 
 const serverLinks = [
 	{
