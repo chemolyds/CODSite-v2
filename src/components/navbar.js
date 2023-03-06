@@ -22,10 +22,6 @@ const navigation = [
 	{ name: 'About', link: "/about"}
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 const NavBar = function({ siteTitle }) {
 	return (
 		<Disclosure as="nav" class="antialiased bg-gray-700 font-sans text-white mb-20 sticky py-1 top-0 z-50">

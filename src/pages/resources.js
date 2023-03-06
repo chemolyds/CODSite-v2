@@ -133,7 +133,7 @@ export default function resources({ data }) {
 }
 
 function retLink(objectArray, sourceInstanceName) {
-	const obj = objectArray.find(obj => obj.node.sourceInstanceName == sourceInstanceName)
+	const obj = objectArray.find(obj => obj.node.sourceInstanceName === sourceInstanceName)
 	if (!obj) {
 		return <Link>TBA</Link>
 	} else {
